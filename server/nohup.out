@@ -1,0 +1,2371 @@
+(node:42500) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42500) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+Server running on port 5000
+MongoDB Connected
+MongoDB connected
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at EventTarget.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/sdam/topology.js:276:34)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:822:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:757:26)
+    at abortSignal (node:internal/abort_controller:374:10)
+    at TimeoutController.abort (node:internal/abort_controller:396:5)
+    at Timeout.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/utils.js:1011:92)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {},
+  [cause]: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+      at connectionFailureError (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:379:20)
+      at Socket.<anonymous> (/home/ubuntu/monj/server/node_modules/mongodb/lib/cmap/connect.js:285:22)
+      at Object.onceWrapper (node:events:634:26)
+      at Socket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1602:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 27017
+    }
+  }
+}
