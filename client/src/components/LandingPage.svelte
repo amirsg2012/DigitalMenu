@@ -45,7 +45,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   width: 170px;
-  background-color: #ffb1b1;
+  background-color: #DFFFD2;
   border-color: #5a0000;
   color: #5a0000;
   transition: background-color 0.3s ease;
@@ -90,15 +90,14 @@ button:hover {
     font-size: 0.8rem;
   }
   button {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 
   </style>
   
   <div class="landing-page">
-    <h1>Welcome to Our Cafe!</h1>
-    <p>Enjoy delicious coffee, pastries, and more.</p>
+    <p>کافه مانجای همه روزه از 8 تا 8 در خدمت شماست</p>
     <div class="container">
       <img src="/logologo.png" alt="Logo" class="logo">
     </div>

@@ -60,7 +60,7 @@
 
     async function fetchMenuItems() {
         try {
-            const response = await fetch('http://87.236.166.60:5000/api/menu');
+            const response = await fetch('http://62.60.214.163:5000/api/menu');
             if (!response.ok) {
                 throw new Error('Failed to fetch menu items');
             }
@@ -72,7 +72,7 @@
 
     async function fetchCategories() {
         try {
-            const response = await fetch('http://87.236.166.60:5000/api/categories');
+            const response = await fetch('http://62.60.214.163:5000/api/categories');
             if (!response.ok) {
                 throw new Error('Failed to fetch categories');
             }
@@ -89,7 +89,7 @@
         formData.append('image', imageFile);
 
         // Send a request to the server to add the new item
-        fetch('http://87.236.166.60:5000/api/menu/add', {
+        fetch('http://62.60.214.163:5000/api/menu/add', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -115,7 +115,7 @@
         formData.append('icon', categoryIconFile);
 
         // Send a request to the server to add the new category
-        fetch('http://87.236.166.60:5000/api/categories', {
+        fetch('http://62.60.214.163:5000/api/categories', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -141,7 +141,7 @@
         formData.append('data', JSON.stringify(selectedCategoryItem));
         formData.append('icon', categoryIconFile);
         // Send a request to the server to update the selected category
-        fetch(`http://87.236.166.60:5000/api/categories/${selectedCategoryItem._id}`, {
+        fetch(`http://62.60.214.163:5000/api/categories/${selectedCategoryItem._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -166,7 +166,7 @@ function handleCategoryIconUpload(event) {
     const formData = new FormData();
     formData.append('icon', categoryIconFile);
 
-    fetch('http://87.236.166.60:5000/api/categories/upload-icon', {
+    fetch('http://62.60.214.163:5000/api/categories/upload-icon', {
         method: 'POST',
         body: formData
     })
@@ -190,7 +190,7 @@ function handleImageUpload(event) {
     imageFile = event.target.files[0];
     formData.append('image', file);
 
-    fetch('http://87.236.166.60:5000/api/menu/upload', {
+    fetch('http://62.60.214.163:5000/api/menu/upload', {
         method: 'POST',
         body: formData
     })
@@ -212,7 +212,7 @@ function handleImageUpload(event) {
     function deleteSelectedCategory() {
         if (confirm("Are you sure you want to delete this category?")) {
             // Send a request to the server to delete the selected category
-            fetch(`http://87.236.166.60:5000/api/categories/${selectedCategoryItem._id}`, {
+            fetch(`http://62.60.214.163:5000/api/categories/${selectedCategoryItem._id}`, {
                 method: 'DELETE'
             })
             .then(response => {
@@ -242,7 +242,7 @@ function handleImageUpload(event) {
     }
     function deleteSelectedItem() {
         if (confirm("Are you sure you want to delete this item?")) {
-            fetch(`http://87.236.166.60:5000/api/menu/${selectedItem._id}`, {
+            fetch(`http://62.60.214.163:5000/api/menu/${selectedItem._id}`, {
                 method: 'DELETE'
             })
             .then(response => {
@@ -264,7 +264,7 @@ function handleImageUpload(event) {
         formData.append('data', JSON.stringify(selectedItem));
         formData.append('image', imageFile);
 
-        fetch(`http://87.236.166.60:5000/api/menu/${selectedItem._id}`, {
+        fetch(`http://62.60.214.163:5000/api/menu/${selectedItem._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -436,17 +436,18 @@ function handleImageUpload(event) {
       <div class="add-item-card">
           <div class="filter-category">
               <h2>Filter by Category</h2>
-              <select bind:value={selectedCategory} on:change={() => filterItemsByCategory(selectedCategory.name)}>
+              <select bind:value={selectedCategory}>
                   <option value="">All</option>
-                  {#each categories as category}
-                  <option value={category}>{category.name}</option>
-                  {/each}
+				{#each categories as category}
+                  <option on:click={() => (selectedCategory = categories.find(cat => cat.name === category.name))} value={category}>{category.name}</option>
+				  {/each}
+
               </select>
           </div>
   
           <!-- Item list -->
           <div class="add-item-list">
-              {#each menuItems.filter(item => item.category === selectedCategory || selectedCategory === '') as item}
+              {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}
               <!-- svelte-ignore a11y-click-events-have-key-events -->
               <li on:click={() => selectItemForModification(item._id)}>{item.name}</li>
               {/each}

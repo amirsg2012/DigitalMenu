@@ -12,7 +12,7 @@
         event.preventDefault();
 
         try {
-            const response = await fetch('http://87.236.166.60:5000/api/admin/login', {
+            const response = await fetch('http://62.60.214.163:5000/api/admin/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify($formData)

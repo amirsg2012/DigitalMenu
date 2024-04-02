@@ -19,7 +19,7 @@
 
   async function fetchMenuItems() {
     try {
-      const response = await fetch('http://87.236.166.60:5000/api/menu');
+      const response = await fetch('http://62.60.214.163:5000/api/menu');
       if (!response.ok) {
         throw new Error('Failed to fetch menu items');
       }
@@ -32,7 +32,7 @@
 // Function to fetch categories
 async function fetchCategories() {
     try {
-      const response = await fetch('http://87.236.166.60:5000/api/categories');
+      const response = await fetch('http://62.60.214.163:5000/api/categories');
       if (!response.ok) {
         throw new Error('Failed to fetch categories');
       }
@@ -78,13 +78,14 @@ async function fetchCategories() {
 
   .menu-item p {
     margin-bottom: 5px;
+	lineHeight: 0.8;
   }
 
   /* Styling for the image viewer */
   .image-viewer {
-    width: calc(100% - 20px); /* 2/3 of the card width */
+    width: 100%; /* 2/3 of the card width */
     height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     cursor: pointer; /* Change cursor to pointer when hovered */
     overflow: hidden; /* Hide overflow to prevent image distortion */
   }
@@ -148,8 +149,8 @@ async function fetchCategories() {
     padding: 10px 20px;
     margin: 0 10px; /* Add margin between tabs */
     border-radius: 5px;
-    min-width: 150px;
     background-color: #ffffff;
+	min-width : 150px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: flex;
@@ -160,6 +161,7 @@ async function fetchCategories() {
 /* Add media query to adjust margin for smaller screens */
 @media (max-width: 768px) {
     .category-tab {
+			min-width : 200px;
         margin: 0 2px; /* Adjust margin for smaller screens */
     }
 }
@@ -171,10 +173,30 @@ async function fetchCategories() {
   .tab-icon {
     margin-right: 5px;
   }
+   .button_1 {
+      padding: 10px 20px;
+      background-color: #DFFFD2;
+      color: #0E2E00;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+	  margin-top: 5px;
+  }
+  .button_2 {
+      padding: 10px 20px;
+      background-color: #FFEDED;
+      color: #0E2E00;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
 </style>
 
 <div class="menu-page">
-  <h1>منو</h1>
+  <img src='/logologo.png' alt="Logo Icon" width=300px/>
 
   <!-- Add event handler for wheel event to prevent scrolling -->
   <div class="category-tabs">
@@ -187,7 +209,7 @@ async function fetchCategories() {
       class="category-tab {selectedCategory === category.name ? 'selected' : ''}"
       transition:fly="{{y: -10, duration: 300}}"
       on:click={() => selectedCategory = category.name}>
-      <img src={category.iconUrl} alt="{category.name} Icon" width=30px/>
+      <img src={category.iconUrl} alt="{category.name} Icon" width=50px/>
       <span class="tab-icon">{category.name}</span>
     </div>
   {/each}
@@ -202,9 +224,19 @@ async function fetchCategories() {
             <img src={item.imageUrl} alt="{item.name}">
           </div>
           <h2>{item.name}</h2>
+			  {#if item.description != undefined}
           <p>{item.description}</p>
-          <p>{item.price} تومان</p>
-          <p>{item.available ? 'موجود' : 'موجود نیست'}</p>
+			  {/if}
+          <p>{item.price}T</p>
+			  {#if item.available}
+          <button class="button_1" >موجود</button>
+		  	  {/if}
+			  {#if !(item.available)}
+		  <button class="button_2" >ناموجود</button>
+		  	  {/if}
+
+
+
         </div>
       {/if}
     {/each}
