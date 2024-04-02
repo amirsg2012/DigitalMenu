@@ -3,6 +3,7 @@
   import { navigate } from 'svelte-routing';
   import { fly } from 'svelte/transition';
   import { createEventDispatcher } from 'svelte';
+  import { MY_IP } from '../env.js' ;
 
   let menuItems = [];
   let selectedCategory = 'All';
@@ -19,7 +20,7 @@
 
   async function fetchMenuItems() {
     try {
-      const response = await fetch('http://62.60.214.163:5000/api/menu');
+      const response = await fetch('http://'+ MY_IP +':5000/api/menu');
       if (!response.ok) {
         throw new Error('Failed to fetch menu items');
       }
@@ -32,7 +33,7 @@
 // Function to fetch categories
 async function fetchCategories() {
     try {
-      const response = await fetch('http://62.60.214.163:5000/api/categories');
+      const response = await fetch('http://'+ MY_IP +':5000/api/categories');
       if (!response.ok) {
         throw new Error('Failed to fetch categories');
       }

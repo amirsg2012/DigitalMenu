@@ -1,6 +1,8 @@
 <!-- src/components/LandingPage.svelte -->
 <script>
     import { navigate } from 'svelte-routing';
+    import { MY_IP } from '../env.js' ;
+
   
     const goToMenuPage = () => {
       navigate('/menu');

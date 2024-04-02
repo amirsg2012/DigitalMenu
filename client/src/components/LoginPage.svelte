@@ -3,6 +3,7 @@
 <script>
     import { onMount } from 'svelte';
     import { writable } from 'svelte/store';
+    import { MY_IP } from '../env.js' ;
 
     // Store for login form data
     const formData = writable({ username: '', password: '' });
@@ -12,7 +13,7 @@
         event.preventDefault();
 
         try {
-            const response = await fetch('http://62.60.214.163:5000/api/admin/login', {
+            const response = await fetch('http://'+ MY_IP +':5000/api/admin/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify($formData)

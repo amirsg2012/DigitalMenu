@@ -4,6 +4,8 @@
     // Import necessary functions and components
     import { onMount } from 'svelte';
     import { fly } from 'svelte/transition';
+    import { MY_IP } from '../env.js' ;
+
 
     let menuItems = [];
     let newItem = {}; // Object to store new item data
@@ -60,7 +62,7 @@
 
     async function fetchMenuItems() {
         try {
-            const response = await fetch('http://62.60.214.163:5000/api/menu');
+            const response = await fetch('http://'+ MY_IP +':5000/api/menu');
             if (!response.ok) {
                 throw new Error('Failed to fetch menu items');
             }
@@ -72,7 +74,7 @@
 
     async function fetchCategories() {
         try {
-            const response = await fetch('http://62.60.214.163:5000/api/categories');
+            const response = await fetch('http://'+ MY_IP +':5000/api/categories');
             if (!response.ok) {
                 throw new Error('Failed to fetch categories');
             }
@@ -89,7 +91,7 @@
         formData.append('image', imageFile);
 
         // Send a request to the server to add the new item
-        fetch('http://62.60.214.163:5000/api/menu/add', {
+        fetch('http://'+ MY_IP +':5000/api/menu/add', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -115,7 +117,7 @@
         formData.append('icon', categoryIconFile);
 
         // Send a request to the server to add the new category
-        fetch('http://62.60.214.163:5000/api/categories', {
+        fetch('http://'+ MY_IP +':5000/api/categories', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -141,7 +143,7 @@
         formData.append('data', JSON.stringify(selectedCategoryItem));
         formData.append('icon', categoryIconFile);
         // Send a request to the server to update the selected category
-        fetch(`http://62.60.214.163:5000/api/categories/${selectedCategoryItem._id}`, {
+        fetch(`http://${MY_IP}:5000/api/categories/${selectedCategoryItem._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -166,7 +168,7 @@ function handleCategoryIconUpload(event) {
     const formData = new FormData();
     formData.append('icon', categoryIconFile);
 
-    fetch('http://62.60.214.163:5000/api/categories/upload-icon', {
+    fetch('http://'+ MY_IP +':5000/api/categories/upload-icon', {
         method: 'POST',
         body: formData
     })
@@ -190,7 +192,7 @@ function handleImageUpload(event) {
     imageFile = event.target.files[0];
     formData.append('image', file);
 
-    fetch('http://62.60.214.163:5000/api/menu/upload', {
+    fetch('http://'+ MY_IP +':5000/api/menu/upload', {
         method: 'POST',
         body: formData
     })
@@ -212,7 +214,7 @@ function handleImageUpload(event) {
     function deleteSelectedCategory() {
         if (confirm("Are you sure you want to delete this category?")) {
             // Send a request to the server to delete the selected category
-            fetch(`http://62.60.214.163:5000/api/categories/${selectedCategoryItem._id}`, {
+            fetch(`http://${MY_IP}:5000/api/categories/${selectedCategoryItem._id}`, {
                 method: 'DELETE'
             })
             .then(response => {
@@ -242,7 +244,7 @@ function handleImageUpload(event) {
     }
     function deleteSelectedItem() {
         if (confirm("Are you sure you want to delete this item?")) {
-            fetch(`http://62.60.214.163:5000/api/menu/${selectedItem._id}`, {
+            fetch(`http://${MY_IP}:5000/api/menu/${selectedItem._id}`, {
                 method: 'DELETE'
             })
             .then(response => {
@@ -264,7 +266,7 @@ function handleImageUpload(event) {
         formData.append('data', JSON.stringify(selectedItem));
         formData.append('image', imageFile);
 
-        fetch(`http://62.60.214.163:5000/api/menu/${selectedItem._id}`, {
+        fetch(`http://${MY_IP}:5000/api/menu/${selectedItem._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
