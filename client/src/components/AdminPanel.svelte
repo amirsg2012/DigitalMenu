@@ -384,6 +384,70 @@ function handleImageUpload(event) {
   height: auto; /* Maintain aspect ratio */
 }
 
+/* Add styles for filter category section */
+.filter-category-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Styles for the filter-category and add-item-list within the filter-category-section */
+.filter-category,
+.add-item-list {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Add styles for item list rows */
+.item-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.item-row:hover {
+    background-color: #f0f0f0;
+}
+
+.item-row input[type="radio"] {
+    margin-right: 10px;
+    align-self: flex-start; /* Align radio buttons to the start (left) */
+}
+
+.item-row span {
+    flex-grow: 1;
+    align-self: flex-start; /* Align item names to the start (left) */
+}
+
+/* Add styles for category list rows */
+.category-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.category-row:hover {
+    background-color: #f0f0f0;
+}
+
+.category-row input[type="radio"] {
+    margin-right: 10px;
+    align-self: flex-start; /* Align radio buttons to the start (left) */
+}
+
+.category-row span {
+    flex-grow: 1;
+    align-self: flex-start; /* Align category names to the start (left) */
+}
+
+
 </style>
 
 
@@ -435,7 +499,7 @@ function handleImageUpload(event) {
       </div>
   
       <!-- Filter by category -->
-      <div class="add-item-card">
+    <div class="filter-category-section">
           <div class="filter-category">
               <h2>Filter by Category</h2>
               <select bind:value={selectedCategory}>
@@ -447,13 +511,15 @@ function handleImageUpload(event) {
               </select>
           </div>
   
-          <!-- Item list -->
           <div class="add-item-list">
-              {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}
-              <!-- svelte-ignore a11y-click-events-have-key-events -->
-              <li on:click={() => selectItemForModification(item._id)}>{item.name}</li>
-              {/each}
-          </div>
+            <!-- Item list -->
+            {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}
+                <label class="item-row">
+                    <input type="radio" name="selectedItem" value={item._id} on:change={() => selectItemForModification(item._id)}>
+                    <span>{item.name}</span>
+                </label>
+            {/each}
+        </div>
       </div>
   
       <!-- Display selected item for modification -->
@@ -518,16 +584,21 @@ function handleImageUpload(event) {
         </form>
     </div>
 <!-- Filter by category -->
-<div class="add-item-card">
+<div class="filter-category-section">
     <div class="filter-category">
+        <!-- Content for Filter by Category -->
         <h2>Select Category</h2>
         <ul class="category-list">
             {#each categories as category}
-                <li on:click={() => selectCategoryForModification(category._id)}>{category.name}</li>
+                <li class="category-row" on:click={() => selectCategoryForModification(category._id)}>
+                    <input type="radio" name="selectedCategory" value={category._id} on:change={() => selectCategoryForModification(category._id)}>
+                    <span>{category.name}</span>
+                </li>
             {/each}
         </ul>
     </div>
 </div>
+
     <!-- Modify existing category form wrapped in a card -->
     {#if selectedCategoryId}
     <div class="add-item-card">

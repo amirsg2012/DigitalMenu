@@ -4005,32 +4005,32 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[45] = list[i];
+    	child_ctx[46] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[48] = list[i];
+    	child_ctx[49] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[45] = list[i];
+    	child_ctx[46] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_3(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[45] = list[i];
+    	child_ctx[46] = list[i];
     	return child_ctx;
     }
 
-    // (405:22) {#each categories as category}
+    // (469:22) {#each categories as category}
     function create_each_block_3(ctx) {
     	let option;
-    	let t_value = /*category*/ ctx[45].name + "";
+    	let t_value = /*category*/ ctx[46].name + "";
     	let t;
     	let option_value_value;
 
@@ -4038,18 +4038,18 @@ var app = (function () {
     		c: function create() {
     			option = element("option");
     			t = text(t_value);
-    			option.__value = option_value_value = /*category*/ ctx[45].name;
+    			option.__value = option_value_value = /*category*/ ctx[46].name;
     			option.value = option.__value;
-    			add_location(option, file$2, 405, 26, 12742);
+    			add_location(option, file$2, 469, 26, 14115);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
     			append_dev(option, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*categories*/ 4 && t_value !== (t_value = /*category*/ ctx[45].name + "")) set_data_dev(t, t_value);
+    			if (dirty[0] & /*categories*/ 4 && t_value !== (t_value = /*category*/ ctx[46].name + "")) set_data_dev(t, t_value);
 
-    			if (dirty[0] & /*categories*/ 4 && option_value_value !== (option_value_value = /*category*/ ctx[45].name)) {
+    			if (dirty[0] & /*categories*/ 4 && option_value_value !== (option_value_value = /*category*/ ctx[46].name)) {
     				prop_dev(option, "__value", option_value_value);
     				option.value = option.__value;
     			}
@@ -4063,33 +4063,33 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(405:22) {#each categories as category}",
+    		source: "(469:22) {#each categories as category}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (443:4) {#each categories as category}
+    // (507:4) {#each categories as category}
     function create_each_block_2(ctx) {
     	let option;
-    	let t_value = /*category*/ ctx[45].name + "";
+    	let t_value = /*category*/ ctx[46].name + "";
     	let t;
     	let option_value_value;
     	let mounted;
     	let dispose;
 
     	function click_handler() {
-    		return /*click_handler*/ ctx[24](/*category*/ ctx[45]);
+    		return /*click_handler*/ ctx[24](/*category*/ ctx[46]);
     	}
 
     	const block = {
     		c: function create() {
     			option = element("option");
     			t = text(t_value);
-    			option.__value = option_value_value = /*category*/ ctx[45];
+    			option.__value = option_value_value = /*category*/ ctx[46];
     			option.value = option.__value;
-    			add_location(option, file$2, 443, 18, 14176);
+    			add_location(option, file$2, 507, 18, 15557);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -4102,9 +4102,9 @@ var app = (function () {
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if (dirty[0] & /*categories*/ 4 && t_value !== (t_value = /*category*/ ctx[45].name + "")) set_data_dev(t, t_value);
+    			if (dirty[0] & /*categories*/ 4 && t_value !== (t_value = /*category*/ ctx[46].name + "")) set_data_dev(t, t_value);
 
-    			if (dirty[0] & /*categories*/ 4 && option_value_value !== (option_value_value = /*category*/ ctx[45])) {
+    			if (dirty[0] & /*categories*/ 4 && option_value_value !== (option_value_value = /*category*/ ctx[46])) {
     				prop_dev(option, "__value", option_value_value);
     				option.value = option.__value;
     			}
@@ -4120,46 +4120,72 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(443:4) {#each categories as category}",
+    		source: "(507:4) {#each categories as category}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (452:14) {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}
+    // (516:12) {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}
     function create_each_block_1(ctx) {
-    	let li;
-    	let t_value = /*item*/ ctx[48].name + "";
-    	let t;
+    	let label;
+    	let input;
+    	let input_value_value;
+    	let t0;
+    	let span;
+    	let t1_value = /*item*/ ctx[49].name + "";
+    	let t1;
+    	let t2;
     	let mounted;
     	let dispose;
 
-    	function click_handler_1() {
-    		return /*click_handler_1*/ ctx[27](/*item*/ ctx[48]);
+    	function change_handler() {
+    		return /*change_handler*/ ctx[27](/*item*/ ctx[49]);
     	}
 
     	const block = {
     		c: function create() {
-    			li = element("li");
-    			t = text(t_value);
-    			add_location(li, file$2, 453, 14, 14649);
+    			label = element("label");
+    			input = element("input");
+    			t0 = space();
+    			span = element("span");
+    			t1 = text(t1_value);
+    			t2 = space();
+    			attr_dev(input, "type", "radio");
+    			attr_dev(input, "name", "selectedItem");
+    			input.value = input_value_value = /*item*/ ctx[49]._id;
+    			attr_dev(input, "class", "svelte-1iv8gbm");
+    			add_location(input, file$2, 517, 20, 16006);
+    			attr_dev(span, "class", "svelte-1iv8gbm");
+    			add_location(span, file$2, 518, 20, 16138);
+    			attr_dev(label, "class", "item-row svelte-1iv8gbm");
+    			add_location(label, file$2, 516, 16, 15961);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, li, anchor);
-    			append_dev(li, t);
+    			insert_dev(target, label, anchor);
+    			append_dev(label, input);
+    			append_dev(label, t0);
+    			append_dev(label, span);
+    			append_dev(span, t1);
+    			append_dev(label, t2);
 
     			if (!mounted) {
-    				dispose = listen_dev(li, "click", click_handler_1, false, false, false, false);
+    				dispose = listen_dev(input, "change", change_handler, false, false, false, false);
     				mounted = true;
     			}
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if (dirty[0] & /*menuItems, selectedCategory*/ 9 && t_value !== (t_value = /*item*/ ctx[48].name + "")) set_data_dev(t, t_value);
+
+    			if (dirty[0] & /*menuItems, selectedCategory, categories*/ 13 && input_value_value !== (input_value_value = /*item*/ ctx[49]._id)) {
+    				prop_dev(input, "value", input_value_value);
+    			}
+
+    			if (dirty[0] & /*menuItems, selectedCategory*/ 9 && t1_value !== (t1_value = /*item*/ ctx[49].name + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(li);
+    			if (detaching) detach_dev(label);
     			mounted = false;
     			dispose();
     		}
@@ -4169,14 +4195,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(452:14) {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}",
+    		source: "(516:12) {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (460:6) {#if selectedItemId}
+    // (526:6) {#if selectedItemId}
     function create_if_block_1(ctx) {
     	let div1;
     	let h2;
@@ -4252,52 +4278,52 @@ var app = (function () {
     			t16 = space();
     			button1 = element("button");
     			button1.textContent = "Apply";
-    			add_location(h2, file$2, 461, 10, 14903);
+    			add_location(h2, file$2, 527, 10, 16364);
     			attr_dev(input0, "type", "text");
-    			attr_dev(input0, "class", "svelte-xau3ls");
-    			add_location(input0, file$2, 466, 18, 15107);
-    			attr_dev(label0, "class", "svelte-xau3ls");
-    			add_location(label0, file$2, 464, 14, 15057);
+    			attr_dev(input0, "class", "svelte-1iv8gbm");
+    			add_location(input0, file$2, 532, 18, 16568);
+    			attr_dev(label0, "class", "svelte-1iv8gbm");
+    			add_location(label0, file$2, 530, 14, 16518);
     			attr_dev(textarea, "rows", "3");
-    			attr_dev(textarea, "class", "svelte-xau3ls");
-    			add_location(textarea, file$2, 470, 18, 15252);
-    			attr_dev(label1, "class", "svelte-xau3ls");
-    			add_location(label1, file$2, 468, 14, 15195);
+    			attr_dev(textarea, "class", "svelte-1iv8gbm");
+    			add_location(textarea, file$2, 536, 18, 16713);
+    			attr_dev(label1, "class", "svelte-1iv8gbm");
+    			add_location(label1, file$2, 534, 14, 16656);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "step", "0.01");
-    			attr_dev(input1, "class", "svelte-xau3ls");
-    			add_location(input1, file$2, 474, 18, 15409);
-    			attr_dev(label2, "class", "svelte-xau3ls");
-    			add_location(label2, file$2, 472, 14, 15358);
+    			attr_dev(input1, "class", "svelte-1iv8gbm");
+    			add_location(input1, file$2, 540, 18, 16870);
+    			attr_dev(label2, "class", "svelte-1iv8gbm");
+    			add_location(label2, file$2, 538, 14, 16819);
     			attr_dev(input2, "type", "checkbox");
-    			attr_dev(input2, "class", "svelte-xau3ls");
-    			add_location(input2, file$2, 478, 18, 15567);
-    			attr_dev(label3, "class", "svelte-xau3ls");
-    			add_location(label3, file$2, 476, 14, 15512);
-    			attr_dev(label4, "class", "svelte-xau3ls");
-    			add_location(label4, file$2, 482, 18, 15761);
+    			attr_dev(input2, "class", "svelte-1iv8gbm");
+    			add_location(input2, file$2, 544, 18, 17028);
+    			attr_dev(label3, "class", "svelte-1iv8gbm");
+    			add_location(label3, file$2, 542, 14, 16973);
+    			attr_dev(label4, "class", "svelte-1iv8gbm");
+    			add_location(label4, file$2, 548, 18, 17222);
     			if (!src_url_equal(img.src, img_src_value = /*selectedItem*/ ctx[5].imageUrl)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Selected Item Image");
-    			attr_dev(img, "class", "svelte-xau3ls");
-    			add_location(img, file$2, 485, 18, 15851);
-    			attr_dev(div0, "class", "image-container svelte-xau3ls");
-    			add_location(div0, file$2, 481, 14, 15713);
+    			attr_dev(img, "class", "svelte-1iv8gbm");
+    			add_location(img, file$2, 551, 18, 17312);
+    			attr_dev(div0, "class", "image-container svelte-1iv8gbm");
+    			add_location(div0, file$2, 547, 14, 17174);
     			attr_dev(input3, "type", "file");
     			attr_dev(input3, "accept", "image/*");
     			attr_dev(input3, "name", "image");
-    			attr_dev(input3, "class", "svelte-xau3ls");
-    			add_location(input3, file$2, 490, 18, 16058);
-    			attr_dev(label5, "class", "svelte-xau3ls");
-    			add_location(label5, file$2, 488, 14, 16000);
+    			attr_dev(input3, "class", "svelte-1iv8gbm");
+    			add_location(input3, file$2, 556, 18, 17519);
+    			attr_dev(label5, "class", "svelte-1iv8gbm");
+    			add_location(label5, file$2, 554, 14, 17461);
     			attr_dev(button0, "type", "button");
-    			attr_dev(button0, "class", "svelte-xau3ls");
-    			add_location(button0, file$2, 493, 14, 16212);
+    			attr_dev(button0, "class", "svelte-1iv8gbm");
+    			add_location(button0, file$2, 559, 14, 17673);
     			attr_dev(button1, "type", "submit");
-    			attr_dev(button1, "class", "svelte-xau3ls");
-    			add_location(button1, file$2, 495, 14, 16331);
-    			add_location(form, file$2, 463, 10, 14990);
-    			attr_dev(div1, "class", "add-item-card svelte-xau3ls");
-    			add_location(div1, file$2, 460, 6, 14865);
+    			attr_dev(button1, "class", "svelte-1iv8gbm");
+    			add_location(button1, file$2, 561, 14, 17792);
+    			add_location(form, file$2, 529, 10, 16451);
+    			attr_dev(div1, "class", "add-item-card svelte-1iv8gbm");
+    			add_location(div1, file$2, 526, 6, 16326);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -4383,48 +4409,82 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(460:6) {#if selectedItemId}",
+    		source: "(526:6) {#if selectedItemId}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (525:12) {#each categories as category}
+    // (592:12) {#each categories as category}
     function create_each_block(ctx) {
     	let li;
-    	let t_value = /*category*/ ctx[45].name + "";
-    	let t;
+    	let input;
+    	let input_value_value;
+    	let t0;
+    	let span;
+    	let t1_value = /*category*/ ctx[46].name + "";
+    	let t1;
+    	let t2;
     	let mounted;
     	let dispose;
 
-    	function click_handler_2() {
-    		return /*click_handler_2*/ ctx[34](/*category*/ ctx[45]);
+    	function change_handler_1() {
+    		return /*change_handler_1*/ ctx[34](/*category*/ ctx[46]);
+    	}
+
+    	function click_handler_1() {
+    		return /*click_handler_1*/ ctx[35](/*category*/ ctx[46]);
     	}
 
     	const block = {
     		c: function create() {
     			li = element("li");
-    			t = text(t_value);
-    			add_location(li, file$2, 525, 16, 17342);
+    			input = element("input");
+    			t0 = space();
+    			span = element("span");
+    			t1 = text(t1_value);
+    			t2 = space();
+    			attr_dev(input, "type", "radio");
+    			attr_dev(input, "name", "selectedCategory");
+    			input.value = input_value_value = /*category*/ ctx[46]._id;
+    			attr_dev(input, "class", "svelte-1iv8gbm");
+    			add_location(input, file$2, 593, 20, 18968);
+    			attr_dev(span, "class", "svelte-1iv8gbm");
+    			add_location(span, file$2, 594, 20, 19116);
+    			attr_dev(li, "class", "category-row svelte-1iv8gbm");
+    			add_location(li, file$2, 592, 16, 18861);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
-    			append_dev(li, t);
+    			append_dev(li, input);
+    			append_dev(li, t0);
+    			append_dev(li, span);
+    			append_dev(span, t1);
+    			append_dev(li, t2);
 
     			if (!mounted) {
-    				dispose = listen_dev(li, "click", click_handler_2, false, false, false, false);
+    				dispose = [
+    					listen_dev(input, "change", change_handler_1, false, false, false, false),
+    					listen_dev(li, "click", click_handler_1, false, false, false, false)
+    				];
+
     				mounted = true;
     			}
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if (dirty[0] & /*categories*/ 4 && t_value !== (t_value = /*category*/ ctx[45].name + "")) set_data_dev(t, t_value);
+
+    			if (dirty[0] & /*categories*/ 4 && input_value_value !== (input_value_value = /*category*/ ctx[46]._id)) {
+    				prop_dev(input, "value", input_value_value);
+    			}
+
+    			if (dirty[0] & /*categories*/ 4 && t1_value !== (t1_value = /*category*/ ctx[46].name + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(li);
     			mounted = false;
-    			dispose();
+    			run_all(dispose);
     		}
     	};
 
@@ -4432,14 +4492,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(525:12) {#each categories as category}",
+    		source: "(592:12) {#each categories as category}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (532:4) {#if selectedCategoryId}
+    // (603:4) {#if selectedCategoryId}
     function create_if_block(ctx) {
     	let div1;
     	let h2;
@@ -4499,41 +4559,41 @@ var app = (function () {
     			t12 = space();
     			button1 = element("button");
     			button1.textContent = "Apply";
-    			add_location(h2, file$2, 533, 8, 17610);
+    			add_location(h2, file$2, 604, 8, 19350);
     			attr_dev(input0, "type", "text");
-    			attr_dev(input0, "class", "svelte-xau3ls");
-    			add_location(input0, file$2, 537, 16, 17758);
-    			attr_dev(label0, "class", "svelte-xau3ls");
-    			add_location(label0, file$2, 535, 12, 17712);
+    			attr_dev(input0, "class", "svelte-1iv8gbm");
+    			add_location(input0, file$2, 608, 16, 19498);
+    			attr_dev(label0, "class", "svelte-1iv8gbm");
+    			add_location(label0, file$2, 606, 12, 19452);
     			attr_dev(textarea, "rows", "3");
-    			attr_dev(textarea, "class", "svelte-xau3ls");
-    			add_location(textarea, file$2, 541, 16, 17903);
-    			attr_dev(label1, "class", "svelte-xau3ls");
-    			add_location(label1, file$2, 539, 12, 17850);
-    			attr_dev(label2, "class", "svelte-xau3ls");
-    			add_location(label2, file$2, 545, 16, 18112);
+    			attr_dev(textarea, "class", "svelte-1iv8gbm");
+    			add_location(textarea, file$2, 612, 16, 19643);
+    			attr_dev(label1, "class", "svelte-1iv8gbm");
+    			add_location(label1, file$2, 610, 12, 19590);
+    			attr_dev(label2, "class", "svelte-1iv8gbm");
+    			add_location(label2, file$2, 616, 16, 19852);
     			if (!src_url_equal(img.src, img_src_value = /*selectedCategoryItem*/ ctx[8].iconUrl)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Selected Category Icon");
-    			attr_dev(img, "class", "svelte-xau3ls");
-    			add_location(img, file$2, 548, 16, 18195);
-    			attr_dev(div0, "class", "image-container svelte-xau3ls");
-    			add_location(div0, file$2, 544, 12, 18066);
+    			attr_dev(img, "class", "svelte-1iv8gbm");
+    			add_location(img, file$2, 619, 16, 19935);
+    			attr_dev(div0, "class", "image-container svelte-1iv8gbm");
+    			add_location(div0, file$2, 615, 12, 19806);
     			attr_dev(input1, "type", "file");
     			attr_dev(input1, "accept", "image/*");
     			attr_dev(input1, "name", "icon");
-    			attr_dev(input1, "class", "svelte-xau3ls");
-    			add_location(input1, file$2, 553, 16, 18409);
-    			attr_dev(label3, "class", "svelte-xau3ls");
-    			add_location(label3, file$2, 551, 12, 18356);
+    			attr_dev(input1, "class", "svelte-1iv8gbm");
+    			add_location(input1, file$2, 624, 16, 20149);
+    			attr_dev(label3, "class", "svelte-1iv8gbm");
+    			add_location(label3, file$2, 622, 12, 20096);
     			attr_dev(button0, "type", "button");
-    			attr_dev(button0, "class", "svelte-xau3ls");
-    			add_location(button0, file$2, 556, 12, 18563);
+    			attr_dev(button0, "class", "svelte-1iv8gbm");
+    			add_location(button0, file$2, 627, 12, 20303);
     			attr_dev(button1, "type", "submit");
-    			attr_dev(button1, "class", "svelte-xau3ls");
-    			add_location(button1, file$2, 558, 12, 18682);
-    			add_location(form, file$2, 534, 8, 17643);
-    			attr_dev(div1, "class", "add-item-card svelte-xau3ls");
-    			add_location(div1, file$2, 532, 4, 17574);
+    			attr_dev(button1, "class", "svelte-1iv8gbm");
+    			add_location(button1, file$2, 629, 12, 20422);
+    			add_location(form, file$2, 605, 8, 19383);
+    			attr_dev(div1, "class", "add-item-card svelte-1iv8gbm");
+    			add_location(div1, file$2, 603, 4, 19314);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -4565,8 +4625,8 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler_2*/ ctx[35]),
-    					listen_dev(textarea, "input", /*textarea_input_handler_1*/ ctx[36]),
+    					listen_dev(input0, "input", /*input0_input_handler_2*/ ctx[36]),
+    					listen_dev(textarea, "input", /*textarea_input_handler_1*/ ctx[37]),
     					listen_dev(input1, "change", /*handleCategoryIconUpload*/ ctx[12], false, false, false, false),
     					listen_dev(button0, "click", /*deleteSelectedCategory*/ ctx[14], false, false, false, false),
     					listen_dev(form, "submit", prevent_default(/*updateSelectedCategory*/ ctx[11]), false, true, false, false)
@@ -4599,7 +4659,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(532:4) {#if selectedCategoryId}",
+    		source: "(603:4) {#if selectedCategoryId}",
     		ctx
     	});
 
@@ -4819,101 +4879,100 @@ var app = (function () {
 
     			t37 = space();
     			if (if_block1) if_block1.c();
-    			add_location(h1, file$2, 395, 8, 12352);
-    			add_location(h20, file$2, 399, 10, 12479);
-    			attr_dev(select0, "class", "svelte-xau3ls");
+    			add_location(h1, file$2, 459, 8, 13725);
+    			add_location(h20, file$2, 463, 10, 13852);
+    			attr_dev(select0, "class", "svelte-1iv8gbm");
     			if (/*newItem*/ ctx[1].category === void 0) add_render_callback(() => /*select0_change_handler*/ ctx[19].call(select0));
-    			add_location(select0, file$2, 403, 18, 12624);
-    			attr_dev(label0, "class", "svelte-xau3ls");
-    			add_location(label0, file$2, 401, 14, 12570);
+    			add_location(select0, file$2, 467, 18, 13997);
+    			attr_dev(label0, "class", "svelte-1iv8gbm");
+    			add_location(label0, file$2, 465, 14, 13943);
     			attr_dev(input0, "type", "text");
-    			attr_dev(input0, "class", "svelte-xau3ls");
-    			add_location(input0, file$2, 411, 18, 12942);
-    			attr_dev(label1, "class", "svelte-xau3ls");
-    			add_location(label1, file$2, 409, 14, 12892);
+    			attr_dev(input0, "class", "svelte-1iv8gbm");
+    			add_location(input0, file$2, 475, 18, 14315);
+    			attr_dev(label1, "class", "svelte-1iv8gbm");
+    			add_location(label1, file$2, 473, 14, 14265);
     			attr_dev(textarea0, "rows", "3");
-    			attr_dev(textarea0, "class", "svelte-xau3ls");
-    			add_location(textarea0, file$2, 415, 18, 13082);
-    			attr_dev(label2, "class", "svelte-xau3ls");
-    			add_location(label2, file$2, 413, 14, 13025);
+    			attr_dev(textarea0, "class", "svelte-1iv8gbm");
+    			add_location(textarea0, file$2, 479, 18, 14455);
+    			attr_dev(label2, "class", "svelte-1iv8gbm");
+    			add_location(label2, file$2, 477, 14, 14398);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "step", "0.01");
-    			attr_dev(input1, "class", "svelte-xau3ls");
-    			add_location(input1, file$2, 419, 18, 13234);
-    			attr_dev(label3, "class", "svelte-xau3ls");
-    			add_location(label3, file$2, 417, 14, 13183);
+    			attr_dev(input1, "class", "svelte-1iv8gbm");
+    			add_location(input1, file$2, 483, 18, 14607);
+    			attr_dev(label3, "class", "svelte-1iv8gbm");
+    			add_location(label3, file$2, 481, 14, 14556);
     			attr_dev(input2, "type", "checkbox");
-    			attr_dev(input2, "class", "svelte-xau3ls");
-    			add_location(input2, file$2, 423, 18, 13387);
-    			attr_dev(label4, "class", "svelte-xau3ls");
-    			add_location(label4, file$2, 421, 14, 13332);
+    			attr_dev(input2, "class", "svelte-1iv8gbm");
+    			add_location(input2, file$2, 487, 18, 14760);
+    			attr_dev(label4, "class", "svelte-1iv8gbm");
+    			add_location(label4, file$2, 485, 14, 14705);
     			if (!src_url_equal(img.src, img_src_value = /*newItem*/ ctx[1].imageUrl)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Selected Item Image");
-    			attr_dev(img, "class", "svelte-xau3ls");
-    			add_location(img, file$2, 428, 22, 13584);
-    			attr_dev(div0, "class", "image-container svelte-xau3ls");
-    			add_location(div0, file$2, 427, 18, 13532);
+    			attr_dev(img, "class", "svelte-1iv8gbm");
+    			add_location(img, file$2, 492, 22, 14957);
+    			attr_dev(div0, "class", "image-container svelte-1iv8gbm");
+    			add_location(div0, file$2, 491, 18, 14905);
     			attr_dev(input3, "type", "file");
     			attr_dev(input3, "accept", "image/*");
     			attr_dev(input3, "name", "image");
-    			attr_dev(input3, "class", "svelte-xau3ls");
-    			add_location(input3, file$2, 430, 18, 13684);
-    			attr_dev(label5, "class", "svelte-xau3ls");
-    			add_location(label5, file$2, 425, 14, 13481);
+    			attr_dev(input3, "class", "svelte-1iv8gbm");
+    			add_location(input3, file$2, 494, 18, 15057);
+    			attr_dev(label5, "class", "svelte-1iv8gbm");
+    			add_location(label5, file$2, 489, 14, 14854);
     			attr_dev(button0, "type", "submit");
-    			attr_dev(button0, "class", "svelte-xau3ls");
-    			add_location(button0, file$2, 432, 14, 13801);
-    			add_location(form0, file$2, 400, 10, 12511);
-    			attr_dev(div1, "class", "add-item-card svelte-xau3ls");
-    			add_location(div1, file$2, 398, 8, 12441);
-    			add_location(h21, file$2, 439, 14, 13994);
+    			attr_dev(button0, "class", "svelte-1iv8gbm");
+    			add_location(button0, file$2, 496, 14, 15174);
+    			add_location(form0, file$2, 464, 10, 13884);
+    			attr_dev(div1, "class", "add-item-card svelte-1iv8gbm");
+    			add_location(div1, file$2, 462, 8, 13814);
+    			add_location(h21, file$2, 503, 14, 15375);
     			option.__value = "";
     			option.value = option.__value;
-    			add_location(option, file$2, 441, 18, 14093);
-    			attr_dev(select1, "class", "svelte-xau3ls");
+    			add_location(option, file$2, 505, 18, 15474);
     			if (/*selectedCategory*/ ctx[3] === void 0) add_render_callback(() => /*select1_change_handler*/ ctx[25].call(select1));
-    			add_location(select1, file$2, 440, 14, 14036);
-    			attr_dev(div2, "class", "filter-category");
-    			add_location(div2, file$2, 438, 10, 13950);
-    			attr_dev(div3, "class", "add-item-list");
-    			add_location(div3, file$2, 450, 10, 14413);
-    			attr_dev(div4, "class", "add-item-card svelte-xau3ls");
-    			add_location(div4, file$2, 437, 6, 13912);
-    			add_location(h22, file$2, 502, 8, 16511);
+    			add_location(select1, file$2, 504, 14, 15417);
+    			attr_dev(div2, "class", "filter-category svelte-1iv8gbm");
+    			add_location(div2, file$2, 502, 10, 15331);
+    			attr_dev(div3, "class", "add-item-list svelte-1iv8gbm");
+    			add_location(div3, file$2, 513, 10, 15765);
+    			attr_dev(div4, "class", "filter-category-section svelte-1iv8gbm");
+    			add_location(div4, file$2, 501, 4, 15283);
+    			add_location(h22, file$2, 568, 8, 17972);
     			attr_dev(input4, "type", "text");
-    			attr_dev(input4, "class", "svelte-xau3ls");
-    			add_location(input4, file$2, 506, 16, 16652);
-    			attr_dev(label6, "class", "svelte-xau3ls");
-    			add_location(label6, file$2, 504, 12, 16606);
+    			attr_dev(input4, "class", "svelte-1iv8gbm");
+    			add_location(input4, file$2, 572, 16, 18113);
+    			attr_dev(label6, "class", "svelte-1iv8gbm");
+    			add_location(label6, file$2, 570, 12, 18067);
     			attr_dev(textarea1, "rows", "3");
-    			attr_dev(textarea1, "class", "svelte-xau3ls");
-    			add_location(textarea1, file$2, 510, 16, 16788);
-    			attr_dev(label7, "class", "svelte-xau3ls");
-    			add_location(label7, file$2, 508, 12, 16735);
+    			attr_dev(textarea1, "class", "svelte-1iv8gbm");
+    			add_location(textarea1, file$2, 576, 16, 18249);
+    			attr_dev(label7, "class", "svelte-1iv8gbm");
+    			add_location(label7, file$2, 574, 12, 18196);
     			attr_dev(input5, "type", "file");
     			attr_dev(input5, "accept", "image/*");
     			attr_dev(input5, "name", "icon");
-    			attr_dev(input5, "class", "svelte-xau3ls");
-    			add_location(input5, file$2, 514, 16, 16935);
-    			attr_dev(label8, "class", "svelte-xau3ls");
-    			add_location(label8, file$2, 512, 12, 16889);
+    			attr_dev(input5, "class", "svelte-1iv8gbm");
+    			add_location(input5, file$2, 580, 16, 18396);
+    			attr_dev(label8, "class", "svelte-1iv8gbm");
+    			add_location(label8, file$2, 578, 12, 18350);
     			attr_dev(button1, "type", "submit");
-    			attr_dev(button1, "class", "svelte-xau3ls");
-    			add_location(button1, file$2, 516, 12, 17054);
-    			add_location(form1, file$2, 503, 8, 16545);
-    			attr_dev(div5, "class", "add-item-card svelte-xau3ls");
-    			add_location(div5, file$2, 501, 6, 16475);
-    			add_location(h23, file$2, 522, 8, 17223);
+    			attr_dev(button1, "class", "svelte-1iv8gbm");
+    			add_location(button1, file$2, 582, 12, 18515);
+    			add_location(form1, file$2, 569, 8, 18006);
+    			attr_dev(div5, "class", "add-item-card svelte-1iv8gbm");
+    			add_location(div5, file$2, 567, 6, 17936);
+    			add_location(h23, file$2, 589, 8, 18742);
     			attr_dev(ul, "class", "category-list");
-    			add_location(ul, file$2, 523, 8, 17256);
-    			attr_dev(div6, "class", "filter-category");
-    			add_location(div6, file$2, 521, 4, 17185);
-    			attr_dev(div7, "class", "add-item-card svelte-xau3ls");
-    			add_location(div7, file$2, 520, 0, 17153);
+    			add_location(ul, file$2, 590, 8, 18775);
+    			attr_dev(div6, "class", "filter-category svelte-1iv8gbm");
+    			add_location(div6, file$2, 587, 4, 18656);
+    			attr_dev(div7, "class", "filter-category-section svelte-1iv8gbm");
+    			add_location(div7, file$2, 586, 0, 18614);
     			attr_dev(div8, "class", "menu-page");
-    			add_location(div8, file$2, 394, 4, 12320);
-    			attr_dev(div9, "class", "container svelte-xau3ls");
-    			add_location(div9, file$2, 393, 0, 12292);
+    			add_location(div8, file$2, 458, 4, 13693);
+    			attr_dev(div9, "class", "container svelte-1iv8gbm");
+    			add_location(div9, file$2, 457, 0, 13665);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5125,7 +5184,7 @@ var app = (function () {
     				select_option(select1, /*selectedCategory*/ ctx[3]);
     			}
 
-    			if (dirty[0] & /*selectItemForModification, menuItems, selectedCategory*/ 32777) {
+    			if (dirty[0] & /*menuItems, selectedCategory, selectItemForModification*/ 32777) {
     				each_value_1 = /*menuItems*/ ctx[0].filter(/*func*/ ctx[26]);
     				validate_each_argument(each_value_1);
     				let i;
@@ -5536,7 +5595,7 @@ var app = (function () {
     	}
 
     	const func = item => item.category === selectedCategory.name || selectedCategory === '';
-    	const click_handler_1 = item => selectItemForModification(item._id);
+    	const change_handler = item => selectItemForModification(item._id);
 
     	function input0_input_handler_1() {
     		selectedItem.name = this.value;
@@ -5568,7 +5627,8 @@ var app = (function () {
     		$$invalidate(6, newCategory);
     	}
 
-    	const click_handler_2 = category => selectCategoryForModification(category._id);
+    	const change_handler_1 = category => selectCategoryForModification(category._id);
+    	const click_handler_1 = category => selectCategoryForModification(category._id);
 
     	function input0_input_handler_2() {
     		selectedCategoryItem.name = this.value;
@@ -5661,14 +5721,15 @@ var app = (function () {
     		click_handler,
     		select1_change_handler,
     		func,
-    		click_handler_1,
+    		change_handler,
     		input0_input_handler_1,
     		textarea_input_handler,
     		input1_input_handler_1,
     		input2_change_handler_1,
     		input4_input_handler,
     		textarea1_input_handler,
-    		click_handler_2,
+    		change_handler_1,
+    		click_handler_1,
     		input0_input_handler_2,
     		textarea_input_handler_1
     	];
