@@ -104,7 +104,16 @@ exports.reorderCategory = async (req, res) => {
   try {
     const { id } = req.params;
     const { newIndex } = req.body;
+     // Sort the categories table in the database according to new orders
+     const categories = await Category.find().sort({ order: 1 });
 
+     // Update the orders in the sorted categories
+     let newOrder = 1;
+     for (const category of categories) {
+       category.order = newOrder;
+       await category.save();
+       newOrder++;
+     }
     // Find the category to be reordered
     const categoryToMove = await Category.findById(id);
     if (!categoryToMove) {
@@ -126,16 +135,6 @@ exports.reorderCategory = async (req, res) => {
     await categoryToMove.save();
     await categoryToSwap.save();
 
-    // Sort the categories table in the database according to new orders
-    const categories = await Category.find().sort({ order: 1 });
-
-    // Update the orders in the sorted categories
-    let newOrder = 1;
-    for (const category of categories) {
-      category.order = newOrder;
-      await category.save();
-      newOrder++;
-    }
 
     res.status(200).json({ message: "Categories reordered successfully" });
   } catch (err) {
