@@ -96,7 +96,6 @@ exports.reorderItem = async (req, res) => {
         currentCategory = item.category;
         currentOrder = 1;
       }
-
       item.order = currentOrder++;
       await item.save();
     }

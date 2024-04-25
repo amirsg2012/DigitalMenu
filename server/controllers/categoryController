@@ -110,9 +110,8 @@ exports.reorderCategory = async (req, res) => {
      // Update the orders in the sorted categories
      let newOrder = 1;
      for (const category of categories) {
-       category.order = newOrder;
+       category.order = newOrder++;
        await category.save();
-       newOrder++;
      }
     // Find the category to be reordered
     const categoryToMove = await Category.findById(id);
