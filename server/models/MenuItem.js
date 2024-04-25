@@ -3,6 +3,7 @@
 const mongoose = require('mongoose');
 
 const menuItemSchema = new mongoose.Schema({
+  order: { type: Number, required: true, default: 0 }, // Default value for order field,
   name: { type: String, required: true },
   category: { type: String, required: true },
   description: { type: String },

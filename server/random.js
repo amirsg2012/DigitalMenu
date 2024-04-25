@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Category = require('./models/Category'); // Assuming this is the path to your Admin model
+const MenuItem  = require('./models/MenuItem');
 
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/my_database', {
@@ -10,12 +11,12 @@ mongoose.connect('mongodb://localhost:27017/my_database', {
   
   try {
     // Find all admin documents
-    const cate = await Category.find({});
+    const cate = await MenuItem.find({});
     
     // Output admin credentials
     console.log('Categories');
     cate.forEach(catee => {
-      console.log(`shalams: ${catee.name} ${catee.iconUrl} `);
+      console.log(`shalams: ${catee.name} ${catee.order} `);
     });
   } catch (err) {
     console.error('Error finding admins:', err);

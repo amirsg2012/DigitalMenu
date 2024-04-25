@@ -3244,7 +3244,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (207:4) {#each categories as category}
+    // (212:4) {#each categories as category}
     function create_each_block_1$1(ctx) {
     	let div;
     	let img;
@@ -3276,15 +3276,15 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*category*/ ctx[12].iconUrl)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = "" + (/*category*/ ctx[12].name + " Icon"));
     			attr_dev(img, "width", "50px");
-    			add_location(img, file$3, 212, 6, 5745);
-    			attr_dev(span, "class", "tab-icon svelte-94bdk2");
-    			add_location(span, file$3, 213, 6, 5819);
+    			add_location(img, file$3, 217, 6, 5941);
+    			attr_dev(span, "class", "tab-icon svelte-1yz4vo1");
+    			add_location(span, file$3, 218, 6, 6015);
 
     			attr_dev(div, "class", div_class_value = "category-tab " + (/*selectedCategory*/ ctx[1] === /*category*/ ctx[12].name
     			? 'selected'
-    			: '') + " svelte-94bdk2");
+    			: '') + " svelte-1yz4vo1");
 
-    			add_location(div, file$3, 208, 4, 5546);
+    			add_location(div, file$3, 213, 4, 5742);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3315,7 +3315,7 @@ var app = (function () {
 
     			if (!current || dirty & /*selectedCategory, categories*/ 6 && div_class_value !== (div_class_value = "category-tab " + (/*selectedCategory*/ ctx[1] === /*category*/ ctx[12].name
     			? 'selected'
-    			: '') + " svelte-94bdk2")) {
+    			: '') + " svelte-1yz4vo1")) {
     				attr_dev(div, "class", div_class_value);
     			}
     		},
@@ -3347,14 +3347,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(207:4) {#each categories as category}",
+    		source: "(212:4) {#each categories as category}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (222:6) {#if selectedCategory === 'All' || selectedCategory === item.category}
+    // (227:6) {#if selectedCategory === 'All' || selectedCategory === item.category}
     function create_if_block$1(ctx) {
     	let div1;
     	let div0;
@@ -3384,7 +3384,7 @@ var app = (function () {
     	}
 
     	let if_block0 = /*item*/ ctx[9].description != undefined && create_if_block_3(ctx);
-    	let if_block1 = /*item*/ ctx[9].available && create_if_block_2(ctx);
+    	let if_block1 = /*item*/ ctx[9].available && create_if_block_2$1(ctx);
     	let if_block2 = !/*item*/ ctx[9].available && create_if_block_1$1(ctx);
 
     	const block = {
@@ -3408,16 +3408,16 @@ var app = (function () {
     			t8 = space();
     			if (!src_url_equal(img.src, img_src_value = /*item*/ ctx[9].imageUrl)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*item*/ ctx[9].name);
-    			attr_dev(img, "class", "svelte-94bdk2");
-    			add_location(img, file$3, 224, 12, 6200);
-    			attr_dev(div0, "class", "image-viewer svelte-94bdk2");
-    			add_location(div0, file$3, 223, 10, 6117);
-    			attr_dev(h2, "class", "svelte-94bdk2");
-    			add_location(h2, file$3, 226, 10, 6271);
-    			attr_dev(p, "class", "svelte-94bdk2");
-    			add_location(p, file$3, 230, 10, 6390);
-    			attr_dev(div1, "class", "menu-item svelte-94bdk2");
-    			add_location(div1, file$3, 222, 8, 6040);
+    			attr_dev(img, "class", "svelte-1yz4vo1");
+    			add_location(img, file$3, 229, 12, 6396);
+    			attr_dev(div0, "class", "image-viewer svelte-1yz4vo1");
+    			add_location(div0, file$3, 228, 10, 6313);
+    			attr_dev(h2, "class", "svelte-1yz4vo1");
+    			add_location(h2, file$3, 231, 10, 6467);
+    			attr_dev(p, "class", "svelte-1yz4vo1");
+    			add_location(p, file$3, 235, 10, 6586);
+    			attr_dev(div1, "class", "menu-item svelte-1yz4vo1");
+    			add_location(div1, file$3, 227, 8, 6236);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -3474,7 +3474,7 @@ var app = (function () {
 
     			if (/*item*/ ctx[9].available) {
     				if (if_block1) ; else {
-    					if_block1 = create_if_block_2(ctx);
+    					if_block1 = create_if_block_2$1(ctx);
     					if_block1.c();
     					if_block1.m(div1, t7);
     				}
@@ -3525,14 +3525,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(222:6) {#if selectedCategory === 'All' || selectedCategory === item.category}",
+    		source: "(227:6) {#if selectedCategory === 'All' || selectedCategory === item.category}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (228:5) {#if item.description != undefined}
+    // (233:5) {#if item.description != undefined}
     function create_if_block_3(ctx) {
     	let p;
     	let t_value = /*item*/ ctx[9].description + "";
@@ -3542,8 +3542,8 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			t = text(t_value);
-    			attr_dev(p, "class", "svelte-94bdk2");
-    			add_location(p, file$3, 228, 10, 6343);
+    			attr_dev(p, "class", "svelte-1yz4vo1");
+    			add_location(p, file$3, 233, 10, 6539);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -3561,23 +3561,23 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(228:5) {#if item.description != undefined}",
+    		source: "(233:5) {#if item.description != undefined}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (232:5) {#if item.available}
-    function create_if_block_2(ctx) {
+    // (237:5) {#if item.available}
+    function create_if_block_2$1(ctx) {
     	let button;
 
     	const block = {
     		c: function create() {
     			button = element("button");
     			button.textContent = "موجود";
-    			attr_dev(button, "class", "button_1 svelte-94bdk2");
-    			add_location(button, file$3, 232, 10, 6447);
+    			attr_dev(button, "class", "button_1 svelte-1yz4vo1");
+    			add_location(button, file$3, 237, 10, 6643);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -3589,16 +3589,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2.name,
+    		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(232:5) {#if item.available}",
+    		source: "(237:5) {#if item.available}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (235:5) {#if !(item.available)}
+    // (240:5) {#if !(item.available)}
     function create_if_block_1$1(ctx) {
     	let button;
 
@@ -3606,8 +3606,8 @@ var app = (function () {
     		c: function create() {
     			button = element("button");
     			button.textContent = "ناموجود";
-    			attr_dev(button, "class", "button_2 svelte-94bdk2");
-    			add_location(button, file$3, 235, 4, 6534);
+    			attr_dev(button, "class", "button_2 svelte-1yz4vo1");
+    			add_location(button, file$3, 240, 4, 6730);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -3621,14 +3621,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(235:5) {#if !(item.available)}",
+    		source: "(240:5) {#if !(item.available)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (221:4) {#each menuItems as item}
+    // (226:4) {#each menuItems as item}
     function create_each_block$1(ctx) {
     	let if_block_anchor;
     	let current;
@@ -3687,7 +3687,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(221:4) {#each menuItems as item}",
+    		source: "(226:4) {#each menuItems as item}",
     		ctx
     	});
 
@@ -3745,16 +3745,17 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
+    			attr_dev(img, "class", "topper svelte-1yz4vo1");
     			if (!src_url_equal(img.src, img_src_value = "/logologo.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Logo Icon");
     			attr_dev(img, "width", "300px");
-    			add_location(img, file$3, 199, 2, 5176);
-    			attr_dev(div0, "class", "category-tabs svelte-94bdk2");
-    			add_location(div0, file$3, 202, 2, 5300);
-    			attr_dev(div1, "class", "menu-grid svelte-94bdk2");
-    			add_location(div1, file$3, 219, 2, 5901);
+    			add_location(img, file$3, 204, 2, 5356);
+    			attr_dev(div0, "class", "category-tabs svelte-1yz4vo1");
+    			add_location(div0, file$3, 207, 2, 5496);
+    			attr_dev(div1, "class", "menu-grid svelte-1yz4vo1");
+    			add_location(div1, file$3, 224, 2, 6097);
     			attr_dev(div2, "class", "menu-page");
-    			add_location(div2, file$3, 198, 0, 5150);
+    			add_location(div2, file$3, 203, 0, 5330);
     		},
     		l: function claim(nodes) {
     			throw new Error_1$1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3911,6 +3912,7 @@ var app = (function () {
     			}
 
     			$$invalidate(0, menuItems = await response.json());
+    			$$invalidate(0, menuItems = menuItems.slice().sort((a, b) => a.order - b.order));
     		} catch(error) {
     			console.error('Error fetching menu items:', error); // Set selectedCategory to the first category in menuItems array
     		}
@@ -3926,6 +3928,7 @@ var app = (function () {
     			}
 
     			$$invalidate(2, categories = await response.json());
+    			$$invalidate(2, categories = categories.slice().sort((a, b) => a.order - b.order));
 
     			// Set selectedCategory to the first category in categories array
     			$$invalidate(1, selectedCategory = categories[0].name);
@@ -4005,32 +4008,32 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[46] = list[i];
+    	child_ctx[47] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[49] = list[i];
+    	child_ctx[50] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[46] = list[i];
+    	child_ctx[47] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_3(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[46] = list[i];
+    	child_ctx[47] = list[i];
     	return child_ctx;
     }
 
-    // (469:22) {#each categories as category}
+    // (522:24) {#each categories as category}
     function create_each_block_3(ctx) {
     	let option;
-    	let t_value = /*category*/ ctx[46].name + "";
+    	let t_value = /*category*/ ctx[47].name + "";
     	let t;
     	let option_value_value;
 
@@ -4038,18 +4041,18 @@ var app = (function () {
     		c: function create() {
     			option = element("option");
     			t = text(t_value);
-    			option.__value = option_value_value = /*category*/ ctx[46].name;
+    			option.__value = option_value_value = /*category*/ ctx[47].name;
     			option.value = option.__value;
-    			add_location(option, file$2, 469, 26, 14115);
+    			add_location(option, file$2, 522, 28, 17143);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
     			append_dev(option, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*categories*/ 4 && t_value !== (t_value = /*category*/ ctx[46].name + "")) set_data_dev(t, t_value);
+    			if (dirty[0] & /*categories*/ 4 && t_value !== (t_value = /*category*/ ctx[47].name + "")) set_data_dev(t, t_value);
 
-    			if (dirty[0] & /*categories*/ 4 && option_value_value !== (option_value_value = /*category*/ ctx[46].name)) {
+    			if (dirty[0] & /*categories*/ 4 && option_value_value !== (option_value_value = /*category*/ ctx[47].name)) {
     				prop_dev(option, "__value", option_value_value);
     				option.value = option.__value;
     			}
@@ -4063,33 +4066,33 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(469:22) {#each categories as category}",
+    		source: "(522:24) {#each categories as category}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (507:4) {#each categories as category}
+    // (570:20) {#each categories as category}
     function create_each_block_2(ctx) {
     	let option;
-    	let t_value = /*category*/ ctx[46].name + "";
+    	let t_value = /*category*/ ctx[47].name + "";
     	let t;
     	let option_value_value;
     	let mounted;
     	let dispose;
 
     	function click_handler() {
-    		return /*click_handler*/ ctx[24](/*category*/ ctx[46]);
+    		return /*click_handler*/ ctx[26](/*category*/ ctx[47]);
     	}
 
     	const block = {
     		c: function create() {
     			option = element("option");
     			t = text(t_value);
-    			option.__value = option_value_value = /*category*/ ctx[46];
+    			option.__value = option_value_value = /*category*/ ctx[47];
     			option.value = option.__value;
-    			add_location(option, file$2, 507, 18, 15557);
+    			add_location(option, file$2, 570, 20, 19121);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -4102,9 +4105,9 @@ var app = (function () {
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if (dirty[0] & /*categories*/ 4 && t_value !== (t_value = /*category*/ ctx[46].name + "")) set_data_dev(t, t_value);
+    			if (dirty[0] & /*categories*/ 4 && t_value !== (t_value = /*category*/ ctx[47].name + "")) set_data_dev(t, t_value);
 
-    			if (dirty[0] & /*categories*/ 4 && option_value_value !== (option_value_value = /*category*/ ctx[46])) {
+    			if (dirty[0] & /*categories*/ 4 && option_value_value !== (option_value_value = /*category*/ ctx[47])) {
     				prop_dev(option, "__value", option_value_value);
     				option.value = option.__value;
     			}
@@ -4120,28 +4123,29 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(507:4) {#each categories as category}",
+    		source: "(570:20) {#each categories as category}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (516:12) {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}
+    // (577:16) {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}
     function create_each_block_1(ctx) {
     	let label;
     	let input;
     	let input_value_value;
+    	let input_checked_value;
     	let t0;
     	let span;
-    	let t1_value = /*item*/ ctx[49].name + "";
+    	let t1_value = /*item*/ ctx[50].name + "";
     	let t1;
     	let t2;
     	let mounted;
     	let dispose;
 
-    	function change_handler() {
-    		return /*change_handler*/ ctx[27](/*item*/ ctx[49]);
+    	function click_handler_1() {
+    		return /*click_handler_1*/ ctx[29](/*item*/ ctx[50]);
     	}
 
     	const block = {
@@ -4154,13 +4158,14 @@ var app = (function () {
     			t2 = space();
     			attr_dev(input, "type", "radio");
     			attr_dev(input, "name", "selectedItem");
-    			input.value = input_value_value = /*item*/ ctx[49]._id;
-    			attr_dev(input, "class", "svelte-1iv8gbm");
-    			add_location(input, file$2, 517, 20, 16006);
-    			attr_dev(span, "class", "svelte-1iv8gbm");
-    			add_location(span, file$2, 518, 20, 16138);
-    			attr_dev(label, "class", "item-row svelte-1iv8gbm");
-    			add_location(label, file$2, 516, 16, 15961);
+    			input.value = input_value_value = /*item*/ ctx[50]._id;
+    			input.checked = input_checked_value = /*selectedItemId*/ ctx[4] === /*item*/ ctx[50]._id;
+    			attr_dev(input, "class", "svelte-3pa71");
+    			add_location(input, file$2, 578, 24, 19603);
+    			attr_dev(span, "class", "svelte-3pa71");
+    			add_location(span, file$2, 579, 24, 19776);
+    			attr_dev(label, "class", "item-row svelte-3pa71");
+    			add_location(label, file$2, 577, 20, 19554);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, label, anchor);
@@ -4171,18 +4176,22 @@ var app = (function () {
     			append_dev(label, t2);
 
     			if (!mounted) {
-    				dispose = listen_dev(input, "change", change_handler, false, false, false, false);
+    				dispose = listen_dev(input, "click", click_handler_1, false, false, false, false);
     				mounted = true;
     			}
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (dirty[0] & /*menuItems, selectedCategory, categories*/ 13 && input_value_value !== (input_value_value = /*item*/ ctx[49]._id)) {
+    			if (dirty[0] & /*menuItems, selectedCategory, categories*/ 13 && input_value_value !== (input_value_value = /*item*/ ctx[50]._id)) {
     				prop_dev(input, "value", input_value_value);
     			}
 
-    			if (dirty[0] & /*menuItems, selectedCategory*/ 9 && t1_value !== (t1_value = /*item*/ ctx[49].name + "")) set_data_dev(t1, t1_value);
+    			if (dirty[0] & /*selectedItemId, menuItems, selectedCategory, categories*/ 29 && input_checked_value !== (input_checked_value = /*selectedItemId*/ ctx[4] === /*item*/ ctx[50]._id)) {
+    				prop_dev(input, "checked", input_checked_value);
+    			}
+
+    			if (dirty[0] & /*menuItems, selectedCategory*/ 9 && t1_value !== (t1_value = /*item*/ ctx[50].name + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(label);
@@ -4195,14 +4204,95 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(516:12) {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}",
+    		source: "(577:16) {#each menuItems.filter(item => item.category === selectedCategory.name || selectedCategory === '') as item}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (526:6) {#if selectedItemId}
+    // (585:12) {#if selectedCategory != ''}
+    function create_if_block_2(ctx) {
+    	let img0;
+    	let img0_src_value;
+    	let t;
+    	let img1;
+    	let img1_src_value;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			img0 = element("img");
+    			t = space();
+    			img1 = element("img");
+    			if (!src_url_equal(img0.src, img0_src_value = "/up.png")) attr_dev(img0, "src", img0_src_value);
+    			attr_dev(img0, "alt", "Logo");
+    			attr_dev(img0, "class", "logo svelte-3pa71");
+    			add_location(img0, file$2, 585, 12, 19988);
+    			if (!src_url_equal(img1.src, img1_src_value = "/down.png")) attr_dev(img1, "src", img1_src_value);
+    			attr_dev(img1, "alt", "Logo");
+    			attr_dev(img1, "class", "logo svelte-3pa71");
+    			add_location(img1, file$2, 586, 12, 20109);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, img0, anchor);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, img1, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(
+    						img0,
+    						"click",
+    						function () {
+    							if (is_function(/*updateItemOrder*/ ctx[20](/*selectedItemId*/ ctx[4], /*selectedItem*/ ctx[5].order - 1))) /*updateItemOrder*/ ctx[20](/*selectedItemId*/ ctx[4], /*selectedItem*/ ctx[5].order - 1).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false,
+    						false
+    					),
+    					listen_dev(
+    						img1,
+    						"click",
+    						function () {
+    							if (is_function(/*updateItemOrder*/ ctx[20](/*selectedItemId*/ ctx[4], /*selectedItem*/ ctx[5].order + 1))) /*updateItemOrder*/ ctx[20](/*selectedItemId*/ ctx[4], /*selectedItem*/ ctx[5].order + 1).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(img0);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(img1);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_2.name,
+    		type: "if",
+    		source: "(585:12) {#if selectedCategory != ''}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (593:8) {#if selectedItemId}
     function create_if_block_1(ctx) {
     	let div1;
     	let h2;
@@ -4248,19 +4338,19 @@ var app = (function () {
     			t1 = space();
     			form = element("form");
     			label0 = element("label");
-    			t2 = text("Name:\n                  ");
+    			t2 = text("Name:\n                    ");
     			input0 = element("input");
     			t3 = space();
     			label1 = element("label");
-    			t4 = text("Description:\n                  ");
+    			t4 = text("Description:\n                    ");
     			textarea = element("textarea");
     			t5 = space();
     			label2 = element("label");
-    			t6 = text("Price:\n                  ");
+    			t6 = text("Price:\n                    ");
     			input1 = element("input");
     			t7 = space();
     			label3 = element("label");
-    			t8 = text("Available:\n                  ");
+    			t8 = text("Available:\n                    ");
     			input2 = element("input");
     			t9 = space();
     			div0 = element("div");
@@ -4270,7 +4360,7 @@ var app = (function () {
     			img = element("img");
     			t12 = space();
     			label5 = element("label");
-    			t13 = text("Update Image:\n                  ");
+    			t13 = text("Update Image:\n                    ");
     			input3 = element("input");
     			t14 = space();
     			button0 = element("button");
@@ -4278,52 +4368,52 @@ var app = (function () {
     			t16 = space();
     			button1 = element("button");
     			button1.textContent = "Apply";
-    			add_location(h2, file$2, 527, 10, 16364);
+    			add_location(h2, file$2, 594, 12, 20408);
     			attr_dev(input0, "type", "text");
-    			attr_dev(input0, "class", "svelte-1iv8gbm");
-    			add_location(input0, file$2, 532, 18, 16568);
-    			attr_dev(label0, "class", "svelte-1iv8gbm");
-    			add_location(label0, file$2, 530, 14, 16518);
+    			attr_dev(input0, "class", "svelte-3pa71");
+    			add_location(input0, file$2, 599, 20, 20622);
+    			attr_dev(label0, "class", "svelte-3pa71");
+    			add_location(label0, file$2, 597, 16, 20568);
     			attr_dev(textarea, "rows", "3");
-    			attr_dev(textarea, "class", "svelte-1iv8gbm");
-    			add_location(textarea, file$2, 536, 18, 16713);
-    			attr_dev(label1, "class", "svelte-1iv8gbm");
-    			add_location(label1, file$2, 534, 14, 16656);
+    			attr_dev(textarea, "class", "svelte-3pa71");
+    			add_location(textarea, file$2, 603, 20, 20775);
+    			attr_dev(label1, "class", "svelte-3pa71");
+    			add_location(label1, file$2, 601, 16, 20714);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "step", "0.01");
-    			attr_dev(input1, "class", "svelte-1iv8gbm");
-    			add_location(input1, file$2, 540, 18, 16870);
-    			attr_dev(label2, "class", "svelte-1iv8gbm");
-    			add_location(label2, file$2, 538, 14, 16819);
+    			attr_dev(input1, "class", "svelte-3pa71");
+    			add_location(input1, file$2, 607, 20, 20940);
+    			attr_dev(label2, "class", "svelte-3pa71");
+    			add_location(label2, file$2, 605, 16, 20885);
     			attr_dev(input2, "type", "checkbox");
-    			attr_dev(input2, "class", "svelte-1iv8gbm");
-    			add_location(input2, file$2, 544, 18, 17028);
-    			attr_dev(label3, "class", "svelte-1iv8gbm");
-    			add_location(label3, file$2, 542, 14, 16973);
-    			attr_dev(label4, "class", "svelte-1iv8gbm");
-    			add_location(label4, file$2, 548, 18, 17222);
+    			attr_dev(input2, "class", "svelte-3pa71");
+    			add_location(input2, file$2, 611, 20, 21106);
+    			attr_dev(label3, "class", "svelte-3pa71");
+    			add_location(label3, file$2, 609, 16, 21047);
+    			attr_dev(label4, "class", "svelte-3pa71");
+    			add_location(label4, file$2, 615, 20, 21308);
     			if (!src_url_equal(img.src, img_src_value = /*selectedItem*/ ctx[5].imageUrl)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Selected Item Image");
-    			attr_dev(img, "class", "svelte-1iv8gbm");
-    			add_location(img, file$2, 551, 18, 17312);
-    			attr_dev(div0, "class", "image-container svelte-1iv8gbm");
-    			add_location(div0, file$2, 547, 14, 17174);
+    			attr_dev(img, "class", "svelte-3pa71");
+    			add_location(img, file$2, 618, 20, 21404);
+    			attr_dev(div0, "class", "image-container svelte-3pa71");
+    			add_location(div0, file$2, 614, 16, 21258);
     			attr_dev(input3, "type", "file");
     			attr_dev(input3, "accept", "image/*");
     			attr_dev(input3, "name", "image");
-    			attr_dev(input3, "class", "svelte-1iv8gbm");
-    			add_location(input3, file$2, 556, 18, 17519);
-    			attr_dev(label5, "class", "svelte-1iv8gbm");
-    			add_location(label5, file$2, 554, 14, 17461);
+    			attr_dev(input3, "class", "svelte-3pa71");
+    			add_location(input3, file$2, 623, 20, 21621);
+    			attr_dev(label5, "class", "svelte-3pa71");
+    			add_location(label5, file$2, 621, 16, 21559);
     			attr_dev(button0, "type", "button");
-    			attr_dev(button0, "class", "svelte-1iv8gbm");
-    			add_location(button0, file$2, 559, 14, 17673);
+    			attr_dev(button0, "class", "svelte-3pa71");
+    			add_location(button0, file$2, 626, 16, 21781);
     			attr_dev(button1, "type", "submit");
-    			attr_dev(button1, "class", "svelte-1iv8gbm");
-    			add_location(button1, file$2, 561, 14, 17792);
-    			add_location(form, file$2, 529, 10, 16451);
-    			attr_dev(div1, "class", "add-item-card svelte-1iv8gbm");
-    			add_location(div1, file$2, 526, 6, 16326);
+    			attr_dev(button1, "class", "svelte-3pa71");
+    			add_location(button1, file$2, 628, 16, 21904);
+    			add_location(form, file$2, 596, 12, 20499);
+    			attr_dev(div1, "class", "add-item-card svelte-3pa71");
+    			add_location(div1, file$2, 593, 8, 20368);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -4365,10 +4455,10 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler_1*/ ctx[28]),
-    					listen_dev(textarea, "input", /*textarea_input_handler*/ ctx[29]),
-    					listen_dev(input1, "input", /*input1_input_handler_1*/ ctx[30]),
-    					listen_dev(input2, "change", /*input2_change_handler_1*/ ctx[31]),
+    					listen_dev(input0, "input", /*input0_input_handler_1*/ ctx[30]),
+    					listen_dev(textarea, "input", /*textarea_input_handler*/ ctx[31]),
+    					listen_dev(input1, "input", /*input1_input_handler_1*/ ctx[32]),
+    					listen_dev(input2, "change", /*input2_change_handler_1*/ ctx[33]),
     					listen_dev(input3, "change", /*handleImageUpload*/ ctx[13], false, false, false, false),
     					listen_dev(button0, "click", /*deleteSelectedItem*/ ctx[17], false, false, false, false),
     					listen_dev(form, "submit", prevent_default(/*updateSelectedItem*/ ctx[18]), false, true, false, false)
@@ -4409,37 +4499,34 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(526:6) {#if selectedItemId}",
+    		source: "(593:8) {#if selectedItemId}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (592:12) {#each categories as category}
+    // (659:16) {#each categories as category}
     function create_each_block(ctx) {
-    	let li;
+    	let label;
     	let input;
     	let input_value_value;
+    	let input_checked_value;
     	let t0;
     	let span;
-    	let t1_value = /*category*/ ctx[46].name + "";
+    	let t1_value = /*category*/ ctx[47].name + "";
     	let t1;
     	let t2;
     	let mounted;
     	let dispose;
 
-    	function change_handler_1() {
-    		return /*change_handler_1*/ ctx[34](/*category*/ ctx[46]);
-    	}
-
-    	function click_handler_1() {
-    		return /*click_handler_1*/ ctx[35](/*category*/ ctx[46]);
+    	function change_handler() {
+    		return /*change_handler*/ ctx[36](/*category*/ ctx[47]);
     	}
 
     	const block = {
     		c: function create() {
-    			li = element("li");
+    			label = element("label");
     			input = element("input");
     			t0 = space();
     			span = element("span");
@@ -4447,44 +4534,45 @@ var app = (function () {
     			t2 = space();
     			attr_dev(input, "type", "radio");
     			attr_dev(input, "name", "selectedCategory");
-    			input.value = input_value_value = /*category*/ ctx[46]._id;
-    			attr_dev(input, "class", "svelte-1iv8gbm");
-    			add_location(input, file$2, 593, 20, 18968);
-    			attr_dev(span, "class", "svelte-1iv8gbm");
-    			add_location(span, file$2, 594, 20, 19116);
-    			attr_dev(li, "class", "category-row svelte-1iv8gbm");
-    			add_location(li, file$2, 592, 16, 18861);
+    			input.value = input_value_value = /*category*/ ctx[47]._id;
+    			input.checked = input_checked_value = /*selectedCategoryId*/ ctx[7] === /*category*/ ctx[47]._id;
+    			attr_dev(input, "class", "svelte-3pa71");
+    			add_location(input, file$2, 660, 24, 23138);
+    			attr_dev(span, "class", "svelte-3pa71");
+    			add_location(span, file$2, 661, 24, 23336);
+    			attr_dev(label, "class", "category-row svelte-3pa71");
+    			add_location(label, file$2, 659, 20, 23085);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, li, anchor);
-    			append_dev(li, input);
-    			append_dev(li, t0);
-    			append_dev(li, span);
+    			insert_dev(target, label, anchor);
+    			append_dev(label, input);
+    			append_dev(label, t0);
+    			append_dev(label, span);
     			append_dev(span, t1);
-    			append_dev(li, t2);
+    			append_dev(label, t2);
 
     			if (!mounted) {
-    				dispose = [
-    					listen_dev(input, "change", change_handler_1, false, false, false, false),
-    					listen_dev(li, "click", click_handler_1, false, false, false, false)
-    				];
-
+    				dispose = listen_dev(input, "change", change_handler, false, false, false, false);
     				mounted = true;
     			}
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (dirty[0] & /*categories*/ 4 && input_value_value !== (input_value_value = /*category*/ ctx[46]._id)) {
+    			if (dirty[0] & /*categories*/ 4 && input_value_value !== (input_value_value = /*category*/ ctx[47]._id)) {
     				prop_dev(input, "value", input_value_value);
     			}
 
-    			if (dirty[0] & /*categories*/ 4 && t1_value !== (t1_value = /*category*/ ctx[46].name + "")) set_data_dev(t1, t1_value);
+    			if (dirty[0] & /*selectedCategoryId, categories*/ 132 && input_checked_value !== (input_checked_value = /*selectedCategoryId*/ ctx[7] === /*category*/ ctx[47]._id)) {
+    				prop_dev(input, "checked", input_checked_value);
+    			}
+
+    			if (dirty[0] & /*categories*/ 4 && t1_value !== (t1_value = /*category*/ ctx[47].name + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(li);
+    			if (detaching) detach_dev(label);
     			mounted = false;
-    			run_all(dispose);
+    			dispose();
     		}
     	};
 
@@ -4492,14 +4580,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(592:12) {#each categories as category}",
+    		source: "(659:16) {#each categories as category}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (603:4) {#if selectedCategoryId}
+    // (676:4) {#if selectedCategoryId}
     function create_if_block(ctx) {
     	let div1;
     	let h2;
@@ -4559,41 +4647,41 @@ var app = (function () {
     			t12 = space();
     			button1 = element("button");
     			button1.textContent = "Apply";
-    			add_location(h2, file$2, 604, 8, 19350);
+    			add_location(h2, file$2, 677, 8, 24234);
     			attr_dev(input0, "type", "text");
-    			attr_dev(input0, "class", "svelte-1iv8gbm");
-    			add_location(input0, file$2, 608, 16, 19498);
-    			attr_dev(label0, "class", "svelte-1iv8gbm");
-    			add_location(label0, file$2, 606, 12, 19452);
+    			attr_dev(input0, "class", "svelte-3pa71");
+    			add_location(input0, file$2, 681, 16, 24382);
+    			attr_dev(label0, "class", "svelte-3pa71");
+    			add_location(label0, file$2, 679, 12, 24336);
     			attr_dev(textarea, "rows", "3");
-    			attr_dev(textarea, "class", "svelte-1iv8gbm");
-    			add_location(textarea, file$2, 612, 16, 19643);
-    			attr_dev(label1, "class", "svelte-1iv8gbm");
-    			add_location(label1, file$2, 610, 12, 19590);
-    			attr_dev(label2, "class", "svelte-1iv8gbm");
-    			add_location(label2, file$2, 616, 16, 19852);
+    			attr_dev(textarea, "class", "svelte-3pa71");
+    			add_location(textarea, file$2, 685, 16, 24527);
+    			attr_dev(label1, "class", "svelte-3pa71");
+    			add_location(label1, file$2, 683, 12, 24474);
+    			attr_dev(label2, "class", "svelte-3pa71");
+    			add_location(label2, file$2, 689, 16, 24736);
     			if (!src_url_equal(img.src, img_src_value = /*selectedCategoryItem*/ ctx[8].iconUrl)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Selected Category Icon");
-    			attr_dev(img, "class", "svelte-1iv8gbm");
-    			add_location(img, file$2, 619, 16, 19935);
-    			attr_dev(div0, "class", "image-container svelte-1iv8gbm");
-    			add_location(div0, file$2, 615, 12, 19806);
+    			attr_dev(img, "class", "svelte-3pa71");
+    			add_location(img, file$2, 692, 16, 24819);
+    			attr_dev(div0, "class", "image-container svelte-3pa71");
+    			add_location(div0, file$2, 688, 12, 24690);
     			attr_dev(input1, "type", "file");
     			attr_dev(input1, "accept", "image/*");
     			attr_dev(input1, "name", "icon");
-    			attr_dev(input1, "class", "svelte-1iv8gbm");
-    			add_location(input1, file$2, 624, 16, 20149);
-    			attr_dev(label3, "class", "svelte-1iv8gbm");
-    			add_location(label3, file$2, 622, 12, 20096);
+    			attr_dev(input1, "class", "svelte-3pa71");
+    			add_location(input1, file$2, 697, 16, 25033);
+    			attr_dev(label3, "class", "svelte-3pa71");
+    			add_location(label3, file$2, 695, 12, 24980);
     			attr_dev(button0, "type", "button");
-    			attr_dev(button0, "class", "svelte-1iv8gbm");
-    			add_location(button0, file$2, 627, 12, 20303);
+    			attr_dev(button0, "class", "svelte-3pa71");
+    			add_location(button0, file$2, 700, 12, 25187);
     			attr_dev(button1, "type", "submit");
-    			attr_dev(button1, "class", "svelte-1iv8gbm");
-    			add_location(button1, file$2, 629, 12, 20422);
-    			add_location(form, file$2, 605, 8, 19383);
-    			attr_dev(div1, "class", "add-item-card svelte-1iv8gbm");
-    			add_location(div1, file$2, 603, 4, 19314);
+    			attr_dev(button1, "class", "svelte-3pa71");
+    			add_location(button1, file$2, 702, 12, 25306);
+    			add_location(form, file$2, 678, 8, 24267);
+    			attr_dev(div1, "class", "add-item-card svelte-3pa71");
+    			add_location(div1, file$2, 676, 4, 24198);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -4625,8 +4713,8 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler_2*/ ctx[36]),
-    					listen_dev(textarea, "input", /*textarea_input_handler_1*/ ctx[37]),
+    					listen_dev(input0, "input", /*input0_input_handler_2*/ ctx[37]),
+    					listen_dev(textarea, "input", /*textarea_input_handler_1*/ ctx[38]),
     					listen_dev(input1, "change", /*handleCategoryIconUpload*/ ctx[12], false, false, false, false),
     					listen_dev(button0, "click", /*deleteSelectedCategory*/ ctx[14], false, false, false, false),
     					listen_dev(form, "submit", prevent_default(/*updateSelectedCategory*/ ctx[11]), false, true, false, false)
@@ -4659,7 +4747,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(603:4) {#if selectedCategoryId}",
+    		source: "(676:4) {#if selectedCategoryId}",
     		ctx
     	});
 
@@ -4667,8 +4755,8 @@ var app = (function () {
     }
 
     function create_fragment$2(ctx) {
-    	let div9;
-    	let div8;
+    	let div7;
+    	let div6;
     	let h1;
     	let t1;
     	let div1;
@@ -4698,24 +4786,23 @@ var app = (function () {
     	let label5;
     	let t14;
     	let div0;
-    	let img;
-    	let img_src_value;
+    	let img0;
+    	let img0_src_value;
     	let t15;
     	let input3;
     	let t16;
     	let button0;
     	let t18;
-    	let div4;
     	let div2;
     	let h21;
     	let t20;
     	let select1;
-    	let option;
+    	let t21;
+    	let ul0;
     	let t22;
-    	let div3;
     	let t23;
     	let t24;
-    	let div5;
+    	let div3;
     	let h22;
     	let t26;
     	let form1;
@@ -4733,12 +4820,18 @@ var app = (function () {
     	let t32;
     	let button1;
     	let t34;
-    	let div7;
-    	let div6;
+    	let div5;
+    	let div4;
     	let h23;
     	let t36;
-    	let ul;
+    	let ul1;
     	let t37;
+    	let img1;
+    	let img1_src_value;
+    	let t38;
+    	let img2;
+    	let img2_src_value;
+    	let t39;
     	let mounted;
     	let dispose;
     	let each_value_3 = /*categories*/ ctx[2];
@@ -4757,7 +4850,7 @@ var app = (function () {
     		each_blocks_2[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
     	}
 
-    	let each_value_1 = /*menuItems*/ ctx[0].filter(/*func*/ ctx[26]);
+    	let each_value_1 = /*menuItems*/ ctx[0].filter(/*func*/ ctx[28]);
     	validate_each_argument(each_value_1);
     	let each_blocks_1 = [];
 
@@ -4765,7 +4858,8 @@ var app = (function () {
     		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
     	}
 
-    	let if_block0 = /*selectedItemId*/ ctx[4] && create_if_block_1(ctx);
+    	let if_block0 = /*selectedCategory*/ ctx[3] != '' && create_if_block_2(ctx);
+    	let if_block1 = /*selectedItemId*/ ctx[4] && create_if_block_1(ctx);
     	let each_value = /*categories*/ ctx[2];
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -4774,12 +4868,12 @@ var app = (function () {
     		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
     	}
 
-    	let if_block1 = /*selectedCategoryId*/ ctx[7] && create_if_block(ctx);
+    	let if_block2 = /*selectedCategoryId*/ ctx[7] && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
-    			div9 = element("div");
-    			div8 = element("div");
+    			div7 = element("div");
+    			div6 = element("div");
     			h1 = element("h1");
     			h1.textContent = "Admin Menu Page";
     			t1 = space();
@@ -4789,7 +4883,7 @@ var app = (function () {
     			t3 = space();
     			form0 = element("form");
     			label0 = element("label");
-    			t4 = text("Category:\n                  ");
+    			t4 = text("Category:\n                    ");
     			select0 = element("select");
 
     			for (let i = 0; i < each_blocks_3.length; i += 1) {
@@ -4798,191 +4892,197 @@ var app = (function () {
 
     			t5 = space();
     			label1 = element("label");
-    			t6 = text("Name:\n                  ");
+    			t6 = text("Name:\n                    ");
     			input0 = element("input");
     			t7 = space();
     			label2 = element("label");
-    			t8 = text("Description:\n                  ");
+    			t8 = text("Description:\n                    ");
     			textarea0 = element("textarea");
     			t9 = space();
     			label3 = element("label");
-    			t10 = text("Price:\n                  ");
+    			t10 = text("Price:\n                    ");
     			input1 = element("input");
     			t11 = space();
     			label4 = element("label");
-    			t12 = text("Available:\n                  ");
+    			t12 = text("Available:\n                    ");
     			input2 = element("input");
     			t13 = space();
     			label5 = element("label");
-    			t14 = text("Image:\n                  ");
+    			t14 = text("Image:\n                    ");
     			div0 = element("div");
-    			img = element("img");
+    			img0 = element("img");
     			t15 = space();
     			input3 = element("input");
     			t16 = space();
     			button0 = element("button");
     			button0.textContent = "Apply";
     			t18 = space();
-    			div4 = element("div");
     			div2 = element("div");
     			h21 = element("h2");
     			h21.textContent = "Filter by Category";
     			t20 = space();
     			select1 = element("select");
-    			option = element("option");
-    			option.textContent = "All";
 
     			for (let i = 0; i < each_blocks_2.length; i += 1) {
     				each_blocks_2[i].c();
     			}
 
-    			t22 = space();
-    			div3 = element("div");
+    			t21 = space();
+    			ul0 = element("ul");
 
     			for (let i = 0; i < each_blocks_1.length; i += 1) {
     				each_blocks_1[i].c();
     			}
 
-    			t23 = space();
+    			t22 = space();
     			if (if_block0) if_block0.c();
+    			t23 = space();
+    			if (if_block1) if_block1.c();
     			t24 = space();
-    			div5 = element("div");
+    			div3 = element("div");
     			h22 = element("h2");
     			h22.textContent = "Add New Category";
     			t26 = space();
     			form1 = element("form");
     			label6 = element("label");
-    			t27 = text("Name:\n                ");
+    			t27 = text("Name:\n                    ");
     			input4 = element("input");
     			t28 = space();
     			label7 = element("label");
-    			t29 = text("Description:\n                ");
+    			t29 = text("Description:\n                    ");
     			textarea1 = element("textarea");
     			t30 = space();
     			label8 = element("label");
-    			t31 = text("Icon:\n                ");
+    			t31 = text("Icon:\n                    ");
     			input5 = element("input");
     			t32 = space();
     			button1 = element("button");
     			button1.textContent = "Add Category";
     			t34 = space();
-    			div7 = element("div");
-    			div6 = element("div");
+    			div5 = element("div");
+    			div4 = element("div");
     			h23 = element("h2");
     			h23.textContent = "Select Category";
     			t36 = space();
-    			ul = element("ul");
+    			ul1 = element("ul");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
     			t37 = space();
-    			if (if_block1) if_block1.c();
-    			add_location(h1, file$2, 459, 8, 13725);
-    			add_location(h20, file$2, 463, 10, 13852);
-    			attr_dev(select0, "class", "svelte-1iv8gbm");
-    			if (/*newItem*/ ctx[1].category === void 0) add_render_callback(() => /*select0_change_handler*/ ctx[19].call(select0));
-    			add_location(select0, file$2, 467, 18, 13997);
-    			attr_dev(label0, "class", "svelte-1iv8gbm");
-    			add_location(label0, file$2, 465, 14, 13943);
+    			img1 = element("img");
+    			t38 = space();
+    			img2 = element("img");
+    			t39 = space();
+    			if (if_block2) if_block2.c();
+    			add_location(h1, file$2, 512, 12, 16729);
+    			add_location(h20, file$2, 516, 12, 16868);
+    			attr_dev(select0, "class", "svelte-3pa71");
+    			if (/*newItem*/ ctx[1].category === void 0) add_render_callback(() => /*select0_change_handler*/ ctx[21].call(select0));
+    			add_location(select0, file$2, 520, 20, 17021);
+    			attr_dev(label0, "class", "svelte-3pa71");
+    			add_location(label0, file$2, 518, 16, 16963);
     			attr_dev(input0, "type", "text");
-    			attr_dev(input0, "class", "svelte-1iv8gbm");
-    			add_location(input0, file$2, 475, 18, 14315);
-    			attr_dev(label1, "class", "svelte-1iv8gbm");
-    			add_location(label1, file$2, 473, 14, 14265);
+    			attr_dev(input0, "class", "svelte-3pa71");
+    			add_location(input0, file$2, 528, 20, 17355);
+    			attr_dev(label1, "class", "svelte-3pa71");
+    			add_location(label1, file$2, 526, 16, 17301);
     			attr_dev(textarea0, "rows", "3");
-    			attr_dev(textarea0, "class", "svelte-1iv8gbm");
-    			add_location(textarea0, file$2, 479, 18, 14455);
-    			attr_dev(label2, "class", "svelte-1iv8gbm");
-    			add_location(label2, file$2, 477, 14, 14398);
+    			attr_dev(textarea0, "class", "svelte-3pa71");
+    			add_location(textarea0, file$2, 532, 20, 17503);
+    			attr_dev(label2, "class", "svelte-3pa71");
+    			add_location(label2, file$2, 530, 16, 17442);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "step", "0.01");
-    			attr_dev(input1, "class", "svelte-1iv8gbm");
-    			add_location(input1, file$2, 483, 18, 14607);
-    			attr_dev(label3, "class", "svelte-1iv8gbm");
-    			add_location(label3, file$2, 481, 14, 14556);
+    			attr_dev(input1, "class", "svelte-3pa71");
+    			add_location(input1, file$2, 536, 20, 17663);
+    			attr_dev(label3, "class", "svelte-3pa71");
+    			add_location(label3, file$2, 534, 16, 17608);
     			attr_dev(input2, "type", "checkbox");
-    			attr_dev(input2, "class", "svelte-1iv8gbm");
-    			add_location(input2, file$2, 487, 18, 14760);
-    			attr_dev(label4, "class", "svelte-1iv8gbm");
-    			add_location(label4, file$2, 485, 14, 14705);
-    			if (!src_url_equal(img.src, img_src_value = /*newItem*/ ctx[1].imageUrl)) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "Selected Item Image");
-    			attr_dev(img, "class", "svelte-1iv8gbm");
-    			add_location(img, file$2, 492, 22, 14957);
-    			attr_dev(div0, "class", "image-container svelte-1iv8gbm");
-    			add_location(div0, file$2, 491, 18, 14905);
+    			attr_dev(input2, "class", "svelte-3pa71");
+    			add_location(input2, file$2, 540, 20, 17824);
+    			attr_dev(label4, "class", "svelte-3pa71");
+    			add_location(label4, file$2, 538, 16, 17765);
+    			if (!src_url_equal(img0.src, img0_src_value = /*newItem*/ ctx[1].imageUrl)) attr_dev(img0, "src", img0_src_value);
+    			attr_dev(img0, "alt", "Selected Item Image");
+    			attr_dev(img0, "class", "svelte-3pa71");
+    			add_location(img0, file$2, 545, 24, 18031);
+    			attr_dev(div0, "class", "image-container svelte-3pa71");
+    			add_location(div0, file$2, 544, 20, 17977);
     			attr_dev(input3, "type", "file");
     			attr_dev(input3, "accept", "image/*");
     			attr_dev(input3, "name", "image");
-    			attr_dev(input3, "class", "svelte-1iv8gbm");
-    			add_location(input3, file$2, 494, 18, 15057);
-    			attr_dev(label5, "class", "svelte-1iv8gbm");
-    			add_location(label5, file$2, 489, 14, 14854);
+    			attr_dev(input3, "class", "svelte-3pa71");
+    			add_location(input3, file$2, 547, 20, 18135);
+    			attr_dev(label5, "class", "svelte-3pa71");
+    			add_location(label5, file$2, 542, 16, 17922);
     			attr_dev(button0, "type", "submit");
-    			attr_dev(button0, "class", "svelte-1iv8gbm");
-    			add_location(button0, file$2, 496, 14, 15174);
-    			add_location(form0, file$2, 464, 10, 13884);
-    			attr_dev(div1, "class", "add-item-card svelte-1iv8gbm");
-    			add_location(div1, file$2, 462, 8, 13814);
-    			add_location(h21, file$2, 503, 14, 15375);
-    			option.__value = "";
-    			option.value = option.__value;
-    			add_location(option, file$2, 505, 18, 15474);
-    			if (/*selectedCategory*/ ctx[3] === void 0) add_render_callback(() => /*select1_change_handler*/ ctx[25].call(select1));
-    			add_location(select1, file$2, 504, 14, 15417);
-    			attr_dev(div2, "class", "filter-category svelte-1iv8gbm");
-    			add_location(div2, file$2, 502, 10, 15331);
-    			attr_dev(div3, "class", "add-item-list svelte-1iv8gbm");
-    			add_location(div3, file$2, 513, 10, 15765);
-    			attr_dev(div4, "class", "filter-category-section svelte-1iv8gbm");
-    			add_location(div4, file$2, 501, 4, 15283);
-    			add_location(h22, file$2, 568, 8, 17972);
+    			attr_dev(button0, "class", "svelte-3pa71");
+    			add_location(button0, file$2, 549, 16, 18256);
+    			add_location(form0, file$2, 517, 12, 16902);
+    			attr_dev(div1, "class", "add-item-card svelte-3pa71");
+    			add_location(div1, file$2, 515, 12, 16828);
+    			add_location(h21, file$2, 567, 16, 18967);
+    			if (/*selectedCategory*/ ctx[3] === void 0) add_render_callback(() => /*select1_change_handler*/ ctx[27].call(select1));
+    			add_location(select1, file$2, 568, 16, 19011);
+    			attr_dev(ul0, "class", "add-item-list svelte-3pa71");
+    			add_location(ul0, file$2, 575, 16, 19382);
+    			attr_dev(div2, "class", "add-item-list svelte-3pa71");
+    			add_location(div2, file$2, 566, 12, 18923);
+    			add_location(h22, file$2, 635, 12, 22100);
     			attr_dev(input4, "type", "text");
-    			attr_dev(input4, "class", "svelte-1iv8gbm");
-    			add_location(input4, file$2, 572, 16, 18113);
-    			attr_dev(label6, "class", "svelte-1iv8gbm");
-    			add_location(label6, file$2, 570, 12, 18067);
+    			attr_dev(input4, "class", "svelte-3pa71");
+    			add_location(input4, file$2, 639, 20, 22257);
+    			attr_dev(label6, "class", "svelte-3pa71");
+    			add_location(label6, file$2, 637, 16, 22203);
     			attr_dev(textarea1, "rows", "3");
-    			attr_dev(textarea1, "class", "svelte-1iv8gbm");
-    			add_location(textarea1, file$2, 576, 16, 18249);
-    			attr_dev(label7, "class", "svelte-1iv8gbm");
-    			add_location(label7, file$2, 574, 12, 18196);
+    			attr_dev(textarea1, "class", "svelte-3pa71");
+    			add_location(textarea1, file$2, 643, 20, 22409);
+    			attr_dev(label7, "class", "svelte-3pa71");
+    			add_location(label7, file$2, 641, 16, 22348);
     			attr_dev(input5, "type", "file");
     			attr_dev(input5, "accept", "image/*");
     			attr_dev(input5, "name", "icon");
-    			attr_dev(input5, "class", "svelte-1iv8gbm");
-    			add_location(input5, file$2, 580, 16, 18396);
-    			attr_dev(label8, "class", "svelte-1iv8gbm");
-    			add_location(label8, file$2, 578, 12, 18350);
+    			attr_dev(input5, "class", "svelte-3pa71");
+    			add_location(input5, file$2, 647, 20, 22572);
+    			attr_dev(label8, "class", "svelte-3pa71");
+    			add_location(label8, file$2, 645, 16, 22518);
     			attr_dev(button1, "type", "submit");
-    			attr_dev(button1, "class", "svelte-1iv8gbm");
-    			add_location(button1, file$2, 582, 12, 18515);
-    			add_location(form1, file$2, 569, 8, 18006);
-    			attr_dev(div5, "class", "add-item-card svelte-1iv8gbm");
-    			add_location(div5, file$2, 567, 6, 17936);
-    			add_location(h23, file$2, 589, 8, 18742);
-    			attr_dev(ul, "class", "category-list");
-    			add_location(ul, file$2, 590, 8, 18775);
-    			attr_dev(div6, "class", "filter-category svelte-1iv8gbm");
-    			add_location(div6, file$2, 587, 4, 18656);
-    			attr_dev(div7, "class", "filter-category-section svelte-1iv8gbm");
-    			add_location(div7, file$2, 586, 0, 18614);
-    			attr_dev(div8, "class", "menu-page");
-    			add_location(div8, file$2, 458, 4, 13693);
-    			attr_dev(div9, "class", "container svelte-1iv8gbm");
-    			add_location(div9, file$2, 457, 0, 13665);
+    			attr_dev(button1, "class", "svelte-3pa71");
+    			add_location(button1, file$2, 649, 16, 22699);
+    			add_location(form1, file$2, 636, 12, 22138);
+    			attr_dev(div3, "class", "add-item-card svelte-3pa71");
+    			add_location(div3, file$2, 634, 8, 22060);
+    			add_location(h23, file$2, 656, 12, 22954);
+    			attr_dev(ul1, "class", "add-item-list svelte-3pa71");
+    			add_location(ul1, file$2, 657, 12, 22991);
+    			if (!src_url_equal(img1.src, img1_src_value = "/up.png")) attr_dev(img1, "src", img1_src_value);
+    			attr_dev(img1, "alt", "Logo");
+    			attr_dev(img1, "class", "logo svelte-3pa71");
+    			add_location(img1, file$2, 666, 12, 23507);
+    			if (!src_url_equal(img2.src, img2_src_value = "/down.png")) attr_dev(img2, "src", img2_src_value);
+    			attr_dev(img2, "alt", "Logo");
+    			attr_dev(img2, "class", "logo svelte-3pa71");
+    			add_location(img2, file$2, 667, 12, 23651);
+    			attr_dev(div4, "class", "filter-category svelte-3pa71");
+    			add_location(div4, file$2, 654, 8, 22860);
+    			attr_dev(div5, "class", "filter-category-section svelte-3pa71");
+    			add_location(div5, file$2, 653, 4, 22814);
+    			attr_dev(div6, "class", "menu-page");
+    			add_location(div6, file$2, 511, 8, 16693);
+    			attr_dev(div7, "class", "container svelte-3pa71");
+    			add_location(div7, file$2, 510, 4, 16661);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div9, anchor);
-    			append_dev(div9, div8);
-    			append_dev(div8, h1);
-    			append_dev(div8, t1);
-    			append_dev(div8, div1);
+    			insert_dev(target, div7, anchor);
+    			append_dev(div7, div6);
+    			append_dev(div6, h1);
+    			append_dev(div6, t1);
+    			append_dev(div6, div1);
     			append_dev(div1, h20);
     			append_dev(div1, t3);
     			append_dev(div1, form0);
@@ -5021,18 +5121,16 @@ var app = (function () {
     			append_dev(form0, label5);
     			append_dev(label5, t14);
     			append_dev(label5, div0);
-    			append_dev(div0, img);
+    			append_dev(div0, img0);
     			append_dev(label5, t15);
     			append_dev(label5, input3);
     			append_dev(form0, t16);
     			append_dev(form0, button0);
-    			append_dev(div8, t18);
-    			append_dev(div8, div4);
-    			append_dev(div4, div2);
+    			append_dev(div6, t18);
+    			append_dev(div6, div2);
     			append_dev(div2, h21);
     			append_dev(div2, t20);
     			append_dev(div2, select1);
-    			append_dev(select1, option);
 
     			for (let i = 0; i < each_blocks_2.length; i += 1) {
     				if (each_blocks_2[i]) {
@@ -5041,22 +5139,24 @@ var app = (function () {
     			}
 
     			select_option(select1, /*selectedCategory*/ ctx[3], true);
-    			append_dev(div4, t22);
-    			append_dev(div4, div3);
+    			append_dev(div2, t21);
+    			append_dev(div2, ul0);
 
     			for (let i = 0; i < each_blocks_1.length; i += 1) {
     				if (each_blocks_1[i]) {
-    					each_blocks_1[i].m(div3, null);
+    					each_blocks_1[i].m(ul0, null);
     				}
     			}
 
-    			append_dev(div8, t23);
-    			if (if_block0) if_block0.m(div8, null);
-    			append_dev(div8, t24);
-    			append_dev(div8, div5);
-    			append_dev(div5, h22);
-    			append_dev(div5, t26);
-    			append_dev(div5, form1);
+    			append_dev(div2, t22);
+    			if (if_block0) if_block0.m(div2, null);
+    			append_dev(div6, t23);
+    			if (if_block1) if_block1.m(div6, null);
+    			append_dev(div6, t24);
+    			append_dev(div6, div3);
+    			append_dev(div3, h22);
+    			append_dev(div3, t26);
+    			append_dev(div3, form1);
     			append_dev(form1, label6);
     			append_dev(label6, t27);
     			append_dev(label6, input4);
@@ -5072,42 +5172,70 @@ var app = (function () {
     			append_dev(label8, input5);
     			append_dev(form1, t32);
     			append_dev(form1, button1);
-    			append_dev(div8, t34);
-    			append_dev(div8, div7);
-    			append_dev(div7, div6);
-    			append_dev(div6, h23);
-    			append_dev(div6, t36);
-    			append_dev(div6, ul);
+    			append_dev(div6, t34);
+    			append_dev(div6, div5);
+    			append_dev(div5, div4);
+    			append_dev(div4, h23);
+    			append_dev(div4, t36);
+    			append_dev(div4, ul1);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				if (each_blocks[i]) {
-    					each_blocks[i].m(ul, null);
+    					each_blocks[i].m(ul1, null);
     				}
     			}
 
-    			append_dev(div8, t37);
-    			if (if_block1) if_block1.m(div8, null);
+    			append_dev(div4, t37);
+    			append_dev(div4, img1);
+    			append_dev(div4, t38);
+    			append_dev(div4, img2);
+    			append_dev(div6, t39);
+    			if (if_block2) if_block2.m(div6, null);
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(select0, "change", /*select0_change_handler*/ ctx[19]),
-    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[20]),
-    					listen_dev(textarea0, "input", /*textarea0_input_handler*/ ctx[21]),
-    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[22]),
-    					listen_dev(input2, "change", /*input2_change_handler*/ ctx[23]),
+    					listen_dev(select0, "change", /*select0_change_handler*/ ctx[21]),
+    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[22]),
+    					listen_dev(textarea0, "input", /*textarea0_input_handler*/ ctx[23]),
+    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[24]),
+    					listen_dev(input2, "change", /*input2_change_handler*/ ctx[25]),
     					listen_dev(input3, "change", /*handleImageUpload*/ ctx[13], false, false, false, false),
     					listen_dev(form0, "submit", prevent_default(/*addNewItem*/ ctx[9]), false, true, false, false),
-    					listen_dev(select1, "change", /*select1_change_handler*/ ctx[25]),
-    					listen_dev(input4, "input", /*input4_input_handler*/ ctx[32]),
-    					listen_dev(textarea1, "input", /*textarea1_input_handler*/ ctx[33]),
+    					listen_dev(select1, "change", /*select1_change_handler*/ ctx[27]),
+    					listen_dev(input4, "input", /*input4_input_handler*/ ctx[34]),
+    					listen_dev(textarea1, "input", /*textarea1_input_handler*/ ctx[35]),
     					listen_dev(input5, "change", /*handleCategoryIconUpload*/ ctx[12], false, false, false, false),
-    					listen_dev(form1, "submit", prevent_default(/*addNewCategory*/ ctx[10]), false, true, false, false)
+    					listen_dev(form1, "submit", prevent_default(/*addNewCategory*/ ctx[10]), false, true, false, false),
+    					listen_dev(
+    						img1,
+    						"click",
+    						function () {
+    							if (is_function(/*updateCategoryOrder*/ ctx[19](/*selectedCategoryItem*/ ctx[8]._id, /*selectedCategoryItem*/ ctx[8].order - 1))) /*updateCategoryOrder*/ ctx[19](/*selectedCategoryItem*/ ctx[8]._id, /*selectedCategoryItem*/ ctx[8].order - 1).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false,
+    						false
+    					),
+    					listen_dev(
+    						img2,
+    						"click",
+    						function () {
+    							if (is_function(/*updateCategoryOrder*/ ctx[19](/*selectedCategoryItem*/ ctx[8]._id, /*selectedCategoryItem*/ ctx[8].order + 1))) /*updateCategoryOrder*/ ctx[19](/*selectedCategoryItem*/ ctx[8]._id, /*selectedCategoryItem*/ ctx[8].order + 1).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false,
+    						false
+    					)
     				];
 
     				mounted = true;
     			}
     		},
-    		p: function update(ctx, dirty) {
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+
     			if (dirty[0] & /*categories*/ 4) {
     				each_value_3 = /*categories*/ ctx[2];
     				validate_each_argument(each_value_3);
@@ -5152,8 +5280,8 @@ var app = (function () {
     				input2.checked = /*newItem*/ ctx[1].available;
     			}
 
-    			if (dirty[0] & /*newItem, categories*/ 6 && !src_url_equal(img.src, img_src_value = /*newItem*/ ctx[1].imageUrl)) {
-    				attr_dev(img, "src", img_src_value);
+    			if (dirty[0] & /*newItem, categories*/ 6 && !src_url_equal(img0.src, img0_src_value = /*newItem*/ ctx[1].imageUrl)) {
+    				attr_dev(img0, "src", img0_src_value);
     			}
 
     			if (dirty[0] & /*categories, selectedCategory*/ 12) {
@@ -5184,8 +5312,8 @@ var app = (function () {
     				select_option(select1, /*selectedCategory*/ ctx[3]);
     			}
 
-    			if (dirty[0] & /*menuItems, selectedCategory, selectItemForModification*/ 32777) {
-    				each_value_1 = /*menuItems*/ ctx[0].filter(/*func*/ ctx[26]);
+    			if (dirty[0] & /*menuItems, selectedCategory, selectedItemId, selectItemForModification*/ 32793) {
+    				each_value_1 = /*menuItems*/ ctx[0].filter(/*func*/ ctx[28]);
     				validate_each_argument(each_value_1);
     				let i;
 
@@ -5197,7 +5325,7 @@ var app = (function () {
     					} else {
     						each_blocks_1[i] = create_each_block_1(child_ctx);
     						each_blocks_1[i].c();
-    						each_blocks_1[i].m(div3, null);
+    						each_blocks_1[i].m(ul0, null);
     					}
     				}
 
@@ -5208,17 +5336,30 @@ var app = (function () {
     				each_blocks_1.length = each_value_1.length;
     			}
 
-    			if (/*selectedItemId*/ ctx[4]) {
+    			if (/*selectedCategory*/ ctx[3] != '') {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_1(ctx);
+    					if_block0 = create_if_block_2(ctx);
     					if_block0.c();
-    					if_block0.m(div8, t24);
+    					if_block0.m(div2, null);
     				}
     			} else if (if_block0) {
     				if_block0.d(1);
     				if_block0 = null;
+    			}
+
+    			if (/*selectedItemId*/ ctx[4]) {
+    				if (if_block1) {
+    					if_block1.p(ctx, dirty);
+    				} else {
+    					if_block1 = create_if_block_1(ctx);
+    					if_block1.c();
+    					if_block1.m(div6, t24);
+    				}
+    			} else if (if_block1) {
+    				if_block1.d(1);
+    				if_block1 = null;
     			}
 
     			if (dirty[0] & /*newCategory*/ 64 && input4.value !== /*newCategory*/ ctx[6].name) {
@@ -5229,7 +5370,7 @@ var app = (function () {
     				set_input_value(textarea1, /*newCategory*/ ctx[6].description);
     			}
 
-    			if (dirty[0] & /*selectCategoryForModification, categories*/ 65540) {
+    			if (dirty[0] & /*categories, selectedCategoryId, selectCategoryForModification*/ 65668) {
     				each_value = /*categories*/ ctx[2];
     				validate_each_argument(each_value);
     				let i;
@@ -5242,7 +5383,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(ul, null);
+    						each_blocks[i].m(ul1, null);
     					}
     				}
 
@@ -5254,28 +5395,29 @@ var app = (function () {
     			}
 
     			if (/*selectedCategoryId*/ ctx[7]) {
-    				if (if_block1) {
-    					if_block1.p(ctx, dirty);
+    				if (if_block2) {
+    					if_block2.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block(ctx);
-    					if_block1.c();
-    					if_block1.m(div8, null);
+    					if_block2 = create_if_block(ctx);
+    					if_block2.c();
+    					if_block2.m(div6, null);
     				}
-    			} else if (if_block1) {
-    				if_block1.d(1);
-    				if_block1 = null;
+    			} else if (if_block2) {
+    				if_block2.d(1);
+    				if_block2 = null;
     			}
     		},
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div9);
+    			if (detaching) detach_dev(div7);
     			destroy_each(each_blocks_3, detaching);
     			destroy_each(each_blocks_2, detaching);
     			destroy_each(each_blocks_1, detaching);
     			if (if_block0) if_block0.d();
-    			destroy_each(each_blocks, detaching);
     			if (if_block1) if_block1.d();
+    			destroy_each(each_blocks, detaching);
+    			if (if_block2) if_block2.d();
     			mounted = false;
     			run_all(dispose);
     		}
@@ -5356,6 +5498,7 @@ var app = (function () {
     			}
 
     			$$invalidate(0, menuItems = await response.json());
+    			$$invalidate(0, menuItems = menuItems.slice().sort((a, b) => a.order - b.order));
     		} catch(error) {
     			console.error('Error fetching menu items:', error);
     		}
@@ -5370,6 +5513,7 @@ var app = (function () {
     			}
 
     			$$invalidate(2, categories = await response.json());
+    			$$invalidate(2, categories = categories.slice().sort((a, b) => a.order - b.order));
     		} catch(error) {
     			console.error('Error fetching categories:', error);
     		}
@@ -5550,6 +5694,45 @@ var app = (function () {
     		});
     	}
 
+    	// Function to update the order of categories in the database
+    	async function updateCategoryOrder(catID, newIndex) {
+    		try {
+    			const response = await fetch(`http://${MY_IP}:5000/api/categories/${catID}/reorder`, {
+    				method: 'PUT',
+    				headers: { 'Content-Type': 'application/json' },
+    				body: JSON.stringify({ newIndex })
+    			});
+
+    			if (!response.ok) {
+    				throw new Error('Failed to update category order in the database');
+    			}
+
+    			await fetchCategories();
+    			selectCategoryForModification(catID);
+    		} catch(error) {
+    			console.error('Error updating category order:', error);
+    		}
+    	}
+
+    	async function updateItemOrder(itemID, newIndex) {
+    		try {
+    			const response = await fetch(`http://${MY_IP}:5000/api/menu/${itemID}/reorder`, {
+    				method: 'PUT',
+    				headers: { 'Content-Type': 'application/json' },
+    				body: JSON.stringify({ newIndex })
+    			});
+
+    			if (!response.ok) {
+    				throw new Error('Failed to update category order in the database');
+    			}
+
+    			await fetchMenuItems();
+    			selectItemForModification(itemID);
+    		} catch(error) {
+    			console.error('Error updating category order:', error);
+    		}
+    	}
+
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -5595,7 +5778,7 @@ var app = (function () {
     	}
 
     	const func = item => item.category === selectedCategory.name || selectedCategory === '';
-    	const change_handler = item => selectItemForModification(item._id);
+    	const click_handler_1 = item => selectItemForModification(item._id);
 
     	function input0_input_handler_1() {
     		selectedItem.name = this.value;
@@ -5627,8 +5810,7 @@ var app = (function () {
     		$$invalidate(6, newCategory);
     	}
 
-    	const change_handler_1 = category => selectCategoryForModification(category._id);
-    	const click_handler_1 = category => selectCategoryForModification(category._id);
+    	const change_handler = category => selectCategoryForModification(category._id);
 
     	function input0_input_handler_2() {
     		selectedCategoryItem.name = this.value;
@@ -5671,7 +5853,9 @@ var app = (function () {
     		selectItemForModification,
     		selectCategoryForModification,
     		deleteSelectedItem,
-    		updateSelectedItem
+    		updateSelectedItem,
+    		updateCategoryOrder,
+    		updateItemOrder
     	});
 
     	$$self.$inject_state = $$props => {
@@ -5713,6 +5897,8 @@ var app = (function () {
     		selectCategoryForModification,
     		deleteSelectedItem,
     		updateSelectedItem,
+    		updateCategoryOrder,
+    		updateItemOrder,
     		select0_change_handler,
     		input0_input_handler,
     		textarea0_input_handler,
@@ -5721,15 +5907,14 @@ var app = (function () {
     		click_handler,
     		select1_change_handler,
     		func,
-    		change_handler,
+    		click_handler_1,
     		input0_input_handler_1,
     		textarea_input_handler,
     		input1_input_handler_1,
     		input2_change_handler_1,
     		input4_input_handler,
     		textarea1_input_handler,
-    		change_handler_1,
-    		click_handler_1,
+    		change_handler,
     		input0_input_handler_2,
     		textarea_input_handler_1
     	];

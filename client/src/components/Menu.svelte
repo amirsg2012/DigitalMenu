@@ -25,6 +25,7 @@
         throw new Error('Failed to fetch menu items');
       }
       menuItems = await response.json();
+      menuItems = menuItems.slice().sort((a, b) => a.order - b.order);
       // Set selectedCategory to the first category in menuItems array
     } catch (error) {
       console.error('Error fetching menu items:', error);
@@ -38,6 +39,8 @@ async function fetchCategories() {
         throw new Error('Failed to fetch categories');
       }
       categories = await response.json();
+      categories = categories.slice().sort((a, b) => a.order - b.order);
+
       // Set selectedCategory to the first category in categories array
         selectedCategory = categories[0].name;
     } catch (error) {
@@ -193,11 +196,13 @@ async function fetchCategories() {
       cursor: pointer;
       transition: background-color 0.3s ease;
   }
-  
+  .topper {
+    max-width: 120px;
+  }
 </style>
 
 <div class="menu-page">
-  <img src='/logologo.png' alt="Logo Icon" width=300px/>
+  <img class ='topper' src='/logologo.png' alt="Logo Icon" width=300px/>
 
   <!-- Add event handler for wheel event to prevent scrolling -->
   <div class="category-tabs">

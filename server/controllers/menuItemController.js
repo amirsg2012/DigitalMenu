@@ -82,6 +82,53 @@ exports.uploadImage = async (req, res) => {
     res.status(500).json({ message: 'Server Error' });
   }
 };
+exports.reorderItem = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { newIndex } = req.body;
+    // Ensure all items have unique order starting from 1
+    const allItems = await MenuItem.find().sort({ category: 1, order: 1 });
+    let currentOrder = 1;
+    let currentCategory = '';
 
+    for (const item of allItems) {
+      if (item.category !== currentCategory) {
+        currentCategory = item.category;
+        currentOrder = 1;
+      }
+
+      item.order = currentOrder++;
+      await item.save();
+    }
+
+    // Find the item to be reordered
+    const itemToMove = await MenuItem.findById(id);
+    if (!itemToMove) {
+      return res.status(404).json({ error: "Menu item not found" });
+    }
+
+    // Find the item to swap positions with
+    const itemToSwap = await MenuItem.findOne({ category: itemToMove.category ,order: newIndex });
+    if (!itemToSwap) {
+      return res.status(404).json({ error: "Menu item to swap not found" });
+    }
+
+    
+
+    // Swap the order of the two items
+    const tempOrder = itemToMove.order;
+    itemToMove.order = itemToSwap.order;
+    itemToSwap.order = tempOrder;
+
+    // Save the changes to the database
+    await itemToMove.save();
+    await itemToSwap.save();
+
+    res.status(200).json({ message: "Menu items reordered successfully" });
+  } catch (err) {
+    console.error("Error reordering menu items:", err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
 // Set up multer middleware to handle file uploads
 exports.upload = multer({ storage: storage }).single('image');

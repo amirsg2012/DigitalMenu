@@ -15,6 +15,8 @@ router.put('/:id', menuItemController.updateMenuItem);
 // DELETE a menu item
 router.delete('/:id', menuItemController.deleteMenuItem);
 
+router.put('/:id/reorder', menuItemController.reorderItem);
+
 // POST upload an image
 router.post('/upload', menuItemController.upload, menuItemController.uploadImage);
 

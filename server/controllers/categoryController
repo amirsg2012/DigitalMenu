@@ -100,4 +100,53 @@ exports.uploadIcon = async (req, res) => {
   }
 };
 
+exports.reorderCategory = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { newIndex } = req.body;
+
+    // Find the category to be reordered
+    const categoryToMove = await Category.findById(id);
+    if (!categoryToMove) {
+      return res.status(404).json({ error: "Category not found" });
+    }
+
+    // Find the category to swap positions with
+    const categoryToSwap = await Category.findOne({ order: newIndex });
+    if (!categoryToSwap) {
+      return res.status(404).json({ error: "Category to swap not found" });
+    }
+
+    // Swap the order of the two categories
+    const tempOrder = categoryToMove.order;
+    categoryToMove.order = categoryToSwap.order;
+    categoryToSwap.order = tempOrder;
+
+    // Save the changes to the database
+    await categoryToMove.save();
+    await categoryToSwap.save();
+
+    // Sort the categories table in the database according to new orders
+    const categories = await Category.find().sort({ order: 1 });
+
+    // Update the orders in the sorted categories
+    let newOrder = 1;
+    for (const category of categories) {
+      category.order = newOrder;
+      await category.save();
+      newOrder++;
+    }
+
+    res.status(200).json({ message: "Categories reordered successfully" });
+  } catch (err) {
+    console.error("Error reordering categories:", err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
+
+
+
+
+
+
 exports.upload = multer({ storage: storage }).single('icon');
