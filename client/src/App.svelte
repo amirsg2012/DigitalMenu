@@ -25,7 +25,7 @@
         width: 100vw;
         min-height: 100vh;
         margin: 0; /* Remove margin */
-        background-color: rgb(255, 240, 200);
+        background-color: rgb(255, 255, 255);
         box-sizing: border-box;
     }
 

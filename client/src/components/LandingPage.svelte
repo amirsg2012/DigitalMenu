@@ -9,7 +9,7 @@
     };
   
     const goToInstagram = () => {
-      window.open('https://www.instagram.com/monjay/', '_blank');
+      window.open('https://www.instagram.com/beauty_by_niloufar/', '_blank');
     };
   </script>
 
@@ -47,9 +47,9 @@ button {
   border-radius: 5px;
   cursor: pointer;
   width: 170px;
-  background-color: #DFFFD2;
-  border-color: #5a0000;
-  color: #5a0000;
+  background-color: #ffdabc;
+  border-color: #969696;
+  color: #000000;
   transition: background-color 0.3s ease;
 }
 
@@ -59,7 +59,8 @@ button:hover {
 
 .button-container {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .container {
@@ -103,8 +104,8 @@ button:hover {
       <img src="/logologo.png" alt="Logo" class="logo">
     </div>
     <div class="button-container">
-      <button on:click={goToInstagram}>مشاهده اینستاگرام</button>
       <button on:click={goToMenuPage}>صفحه منو</button>
+      <button on:click={goToInstagram}>مشاهده اینستاگرام</button>
     </div>
   </div>
   

@@ -79,7 +79,7 @@ async function fetchCategories() {
   .menu-item {
     padding: 20px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
@@ -89,7 +89,7 @@ async function fetchCategories() {
 
   .menu-item p {
     margin-bottom: 5px;
-	lineHeight: 0.8;
+	  line-Height: 0.8;
   }
 
   /* Styling for the image viewer */
@@ -139,7 +139,7 @@ async function fetchCategories() {
 
 /* Handle */
 .category-tabs::-webkit-scrollbar-thumb {
-  background: #888; /* Color of the handle */
+  background: #ffdabc; /* Color of the handle */
   border-radius: 6px; /* Rounded corners of the handle */
 }
 
@@ -177,7 +177,7 @@ async function fetchCategories() {
     }
 }
   .category-tab.selected {
-    background-color: #b9ffb6;
+    background-color: #ffdabc;
     
   }
 
@@ -240,10 +240,8 @@ async function fetchCategories() {
         {#if item.description != undefined}
           <p>{item.description}</p>
         {/if}
-        <p>{item.price}T</p>
-        {#if item.category === 'صبحانه و میان وعده|BREAKFAST & BRUNCH' && isBreakfastTime()}
-        <p> صبحانه و میان وعده در ساعات ۸-۱۱ و ۱۸-۲۱ سرو میشد</p>
-        {:else if item.available}
+        <!-- <p>{item.price}T</p> -->
+        {#if item.available}
           <button class="button_1">موجود</button>
         {:else if item.available === false}
           <button class="button_2">ناموجود</button>  

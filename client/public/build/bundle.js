@@ -3092,24 +3092,24 @@ var app = (function () {
     			t0 = space();
     			div1 = element("div");
     			button0 = element("button");
-    			button0.textContent = "مشاهده اینستاگرام";
+    			button0.textContent = "صفحه منو";
     			t2 = space();
     			button1 = element("button");
-    			button1.textContent = "صفحه منو";
+    			button1.textContent = "مشاهده اینستاگرام";
     			if (!src_url_equal(img.src, img_src_value = "/logologo.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Logo");
-    			attr_dev(img, "class", "logo svelte-1k0kz0p");
-    			add_location(img, file$4, 102, 6, 1780);
-    			attr_dev(div0, "class", "container svelte-1k0kz0p");
-    			add_location(div0, file$4, 101, 4, 1750);
-    			attr_dev(button0, "class", "svelte-1k0kz0p");
-    			add_location(button0, file$4, 105, 6, 1882);
-    			attr_dev(button1, "class", "svelte-1k0kz0p");
-    			add_location(button1, file$4, 106, 6, 1948);
-    			attr_dev(div1, "class", "button-container svelte-1k0kz0p");
-    			add_location(div1, file$4, 104, 4, 1845);
-    			attr_dev(div2, "class", "landing-page svelte-1k0kz0p");
-    			add_location(div2, file$4, 100, 2, 1719);
+    			attr_dev(img, "class", "logo svelte-1mfwupl");
+    			add_location(img, file$4, 103, 6, 1817);
+    			attr_dev(div0, "class", "container svelte-1mfwupl");
+    			add_location(div0, file$4, 102, 4, 1787);
+    			attr_dev(button0, "class", "svelte-1mfwupl");
+    			add_location(button0, file$4, 106, 6, 1919);
+    			attr_dev(button1, "class", "svelte-1mfwupl");
+    			add_location(button1, file$4, 107, 6, 1975);
+    			attr_dev(div1, "class", "button-container svelte-1mfwupl");
+    			add_location(div1, file$4, 105, 4, 1882);
+    			attr_dev(div2, "class", "landing-page svelte-1mfwupl");
+    			add_location(div2, file$4, 101, 2, 1756);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3126,8 +3126,8 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(button0, "click", /*goToInstagram*/ ctx[1], false, false, false, false),
-    					listen_dev(button1, "click", /*goToMenuPage*/ ctx[0], false, false, false, false)
+    					listen_dev(button0, "click", /*goToMenuPage*/ ctx[0], false, false, false, false),
+    					listen_dev(button1, "click", /*goToInstagram*/ ctx[1], false, false, false, false)
     				];
 
     				mounted = true;
@@ -3163,7 +3163,7 @@ var app = (function () {
     	};
 
     	const goToInstagram = () => {
-    		window.open('https://www.instagram.com/monjay/', '_blank');
+    		window.open('https://www.instagram.com/beauty_by_niloufar/', '_blank');
     	};
 
     	const writable_props = [];
@@ -3267,15 +3267,15 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*category*/ ctx[12].iconUrl)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = "" + (/*category*/ ctx[12].name + " Icon"));
     			attr_dev(img, "width", "50px");
-    			add_location(img, file$3, 224, 6, 6214);
-    			attr_dev(span, "class", "tab-icon svelte-1yz4vo1");
-    			add_location(span, file$3, 225, 6, 6288);
+    			add_location(img, file$3, 224, 6, 6234);
+    			attr_dev(span, "class", "tab-icon svelte-nwzfei");
+    			add_location(span, file$3, 225, 6, 6308);
 
     			attr_dev(div, "class", div_class_value = "category-tab " + (/*selectedCategory*/ ctx[1] === /*category*/ ctx[12].name
     			? 'selected'
-    			: '') + " svelte-1yz4vo1");
+    			: '') + " svelte-nwzfei");
 
-    			add_location(div, file$3, 220, 4, 6015);
+    			add_location(div, file$3, 220, 4, 6035);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3306,7 +3306,7 @@ var app = (function () {
 
     			if (!current || dirty & /*selectedCategory, categories*/ 6 && div_class_value !== (div_class_value = "category-tab " + (/*selectedCategory*/ ctx[1] === /*category*/ ctx[12].name
     			? 'selected'
-    			: '') + " svelte-1yz4vo1")) {
+    			: '') + " svelte-nwzfei")) {
     				attr_dev(div, "class", div_class_value);
     			}
     		},
@@ -3358,13 +3358,7 @@ var app = (function () {
     	let t1;
     	let t2;
     	let t3;
-    	let p;
-    	let t4_value = /*item*/ ctx[9].price + "";
     	let t4;
-    	let t5;
-    	let t6;
-    	let show_if;
-    	let t7;
     	let div1_transition;
     	let current;
     	let mounted;
@@ -3374,17 +3368,14 @@ var app = (function () {
     		return /*click_handler_1*/ ctx[5](/*item*/ ctx[9]);
     	}
 
-    	let if_block0 = /*item*/ ctx[9].description != undefined && create_if_block_4(ctx);
+    	let if_block0 = /*item*/ ctx[9].description != undefined && create_if_block_3(ctx);
 
     	function select_block_type(ctx, dirty) {
-    		if (dirty & /*menuItems*/ 1) show_if = null;
-    		if (show_if == null) show_if = !!(/*item*/ ctx[9].category === 'صبحانه و میان وعده|BREAKFAST & BRUNCH' && isBreakfastTime());
-    		if (show_if) return create_if_block_1$1;
-    		if (/*item*/ ctx[9].available) return create_if_block_2$1;
-    		if (/*item*/ ctx[9].available === false) return create_if_block_3;
+    		if (/*item*/ ctx[9].available) return create_if_block_1$1;
+    		if (/*item*/ ctx[9].available === false) return create_if_block_2$1;
     	}
 
-    	let current_block_type = select_block_type(ctx, -1);
+    	let current_block_type = select_block_type(ctx);
     	let if_block1 = current_block_type && current_block_type(ctx);
 
     	const block = {
@@ -3398,24 +3389,18 @@ var app = (function () {
     			t2 = space();
     			if (if_block0) if_block0.c();
     			t3 = space();
-    			p = element("p");
-    			t4 = text(t4_value);
-    			t5 = text("T");
-    			t6 = space();
     			if (if_block1) if_block1.c();
-    			t7 = space();
+    			t4 = space();
     			if (!src_url_equal(img.src, img_src_value = /*item*/ ctx[9].imageUrl)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*item*/ ctx[9].name);
-    			attr_dev(img, "class", "svelte-1yz4vo1");
-    			add_location(img, file$3, 236, 10, 6661);
-    			attr_dev(div0, "class", "image-viewer svelte-1yz4vo1");
-    			add_location(div0, file$3, 235, 8, 6580);
-    			attr_dev(h2, "class", "svelte-1yz4vo1");
-    			add_location(h2, file$3, 238, 8, 6728);
-    			attr_dev(p, "class", "svelte-1yz4vo1");
-    			add_location(p, file$3, 242, 8, 6851);
-    			attr_dev(div1, "class", "menu-item svelte-1yz4vo1");
-    			add_location(div1, file$3, 234, 6, 6505);
+    			attr_dev(img, "class", "svelte-nwzfei");
+    			add_location(img, file$3, 236, 10, 6681);
+    			attr_dev(div0, "class", "image-viewer svelte-nwzfei");
+    			add_location(div0, file$3, 235, 8, 6600);
+    			attr_dev(h2, "class", "svelte-nwzfei");
+    			add_location(h2, file$3, 238, 8, 6748);
+    			attr_dev(div1, "class", "menu-item svelte-nwzfei");
+    			add_location(div1, file$3, 234, 6, 6525);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -3427,12 +3412,8 @@ var app = (function () {
     			append_dev(div1, t2);
     			if (if_block0) if_block0.m(div1, null);
     			append_dev(div1, t3);
-    			append_dev(div1, p);
-    			append_dev(p, t4);
-    			append_dev(p, t5);
-    			append_dev(div1, t6);
     			if (if_block1) if_block1.m(div1, null);
-    			append_dev(div1, t7);
+    			append_dev(div1, t4);
     			current = true;
 
     			if (!mounted) {
@@ -3457,7 +3438,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_4(ctx);
+    					if_block0 = create_if_block_3(ctx);
     					if_block0.c();
     					if_block0.m(div1, t3);
     				}
@@ -3466,15 +3447,13 @@ var app = (function () {
     				if_block0 = null;
     			}
 
-    			if ((!current || dirty & /*menuItems*/ 1) && t4_value !== (t4_value = /*item*/ ctx[9].price + "")) set_data_dev(t4, t4_value);
-
-    			if (current_block_type !== (current_block_type = select_block_type(ctx, dirty))) {
+    			if (current_block_type !== (current_block_type = select_block_type(ctx))) {
     				if (if_block1) if_block1.d(1);
     				if_block1 = current_block_type && current_block_type(ctx);
 
     				if (if_block1) {
     					if_block1.c();
-    					if_block1.m(div1, t7);
+    					if_block1.m(div1, t4);
     				}
     			}
     		},
@@ -3520,7 +3499,7 @@ var app = (function () {
     }
 
     // (240:8) {#if item.description != undefined}
-    function create_if_block_4(ctx) {
+    function create_if_block_3(ctx) {
     	let p;
     	let t_value = /*item*/ ctx[9].description + "";
     	let t;
@@ -3529,8 +3508,8 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			t = text(t_value);
-    			attr_dev(p, "class", "svelte-1yz4vo1");
-    			add_location(p, file$3, 240, 10, 6803);
+    			attr_dev(p, "class", "svelte-nwzfei");
+    			add_location(p, file$3, 240, 10, 6823);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -3546,7 +3525,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4.name,
+    		id: create_if_block_3.name,
     		type: "if",
     		source: "(240:8) {#if item.description != undefined}",
     		ctx
@@ -3555,46 +3534,16 @@ var app = (function () {
     	return block;
     }
 
-    // (248:43) 
-    function create_if_block_3(ctx) {
-    	let button;
-
-    	const block = {
-    		c: function create() {
-    			button = element("button");
-    			button.textContent = "ناموجود";
-    			attr_dev(button, "class", "button_2 svelte-1yz4vo1");
-    			add_location(button, file$3, 248, 10, 7169);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, button, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(button);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_3.name,
-    		type: "if",
-    		source: "(248:43) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (246:33) 
+    // (246:43) 
     function create_if_block_2$1(ctx) {
     	let button;
 
     	const block = {
     		c: function create() {
     			button = element("button");
-    			button.textContent = "موجود";
-    			attr_dev(button, "class", "button_1 svelte-1yz4vo1");
-    			add_location(button, file$3, 246, 10, 7075);
+    			button.textContent = "ناموجود";
+    			attr_dev(button, "class", "button_2 svelte-nwzfei");
+    			add_location(button, file$3, 246, 10, 7034);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -3608,29 +3557,29 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(246:33) ",
+    		source: "(246:43) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (244:8) {#if item.category === 'صبحانه و میان وعده|BREAKFAST & BRUNCH' && isBreakfastTime()}
+    // (244:8) {#if item.available}
     function create_if_block_1$1(ctx) {
-    	let p;
+    	let button;
 
     	const block = {
     		c: function create() {
-    			p = element("p");
-    			p.textContent = "صبحانه و میان وعده در ساعات ۸-۱۱ و ۱۸-۲۱ سرو میشد";
-    			attr_dev(p, "class", "svelte-1yz4vo1");
-    			add_location(p, file$3, 244, 8, 6973);
+    			button = element("button");
+    			button.textContent = "موجود";
+    			attr_dev(button, "class", "button_1 svelte-nwzfei");
+    			add_location(button, file$3, 244, 10, 6940);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
+    			insert_dev(target, button, anchor);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(button);
     		}
     	};
 
@@ -3638,7 +3587,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(244:8) {#if item.category === 'صبحانه و میان وعده|BREAKFAST & BRUNCH' && isBreakfastTime()}",
+    		source: "(244:8) {#if item.available}",
     		ctx
     	});
 
@@ -3762,17 +3711,17 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(img, "class", "topper svelte-1yz4vo1");
+    			attr_dev(img, "class", "topper svelte-nwzfei");
     			if (!src_url_equal(img.src, img_src_value = "/logologo.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Logo Icon");
     			attr_dev(img, "width", "300px");
-    			add_location(img, file$3, 211, 2, 5629);
-    			attr_dev(div0, "class", "category-tabs svelte-1yz4vo1");
-    			add_location(div0, file$3, 214, 2, 5769);
-    			attr_dev(div1, "class", "menu-grid svelte-1yz4vo1");
-    			add_location(div1, file$3, 231, 2, 6370);
+    			add_location(img, file$3, 211, 2, 5649);
+    			attr_dev(div0, "class", "category-tabs svelte-nwzfei");
+    			add_location(div0, file$3, 214, 2, 5789);
+    			attr_dev(div1, "class", "menu-grid svelte-nwzfei");
+    			add_location(div1, file$3, 231, 2, 6390);
     			attr_dev(div2, "class", "menu-page");
-    			add_location(div2, file$3, 210, 0, 5603);
+    			add_location(div2, file$3, 210, 0, 5623);
     		},
     		l: function claim(nodes) {
     			throw new Error_1$1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3829,7 +3778,7 @@ var app = (function () {
     				check_outros();
     			}
 
-    			if (dirty & /*menuItems, isBreakfastTime, undefined, handleClick, selectedCategory*/ 11) {
+    			if (dirty & /*menuItems, undefined, handleClick, selectedCategory*/ 11) {
     				each_value = /*menuItems*/ ctx[0];
     				validate_each_argument(each_value);
     				let i;
@@ -6252,7 +6201,7 @@ var app = (function () {
     		c: function create() {
     			main = element("main");
     			create_component(router.$$.fragment);
-    			attr_dev(main, "class", "svelte-1no4cmf");
+    			attr_dev(main, "class", "svelte-1j3ryhz");
     			add_location(main, file, 9, 0, 395);
     		},
     		l: function claim(nodes) {
