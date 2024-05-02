@@ -9,7 +9,7 @@
     };
   
     const goToInstagram = () => {
-      window.open('https://www.instagram.com/monjay/', '_blank');
+      window.open('https://www.instagram.com/monjay.cafe/', '_blank');
     };
   </script>
 
@@ -59,7 +59,8 @@ button:hover {
 
 .button-container {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .container {

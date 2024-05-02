@@ -3098,18 +3098,18 @@ var app = (function () {
     			button1.textContent = "صفحه منو";
     			if (!src_url_equal(img.src, img_src_value = "/logologo.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Logo");
-    			attr_dev(img, "class", "logo svelte-1k0kz0p");
-    			add_location(img, file$4, 102, 6, 1780);
-    			attr_dev(div0, "class", "container svelte-1k0kz0p");
-    			add_location(div0, file$4, 101, 4, 1750);
-    			attr_dev(button0, "class", "svelte-1k0kz0p");
-    			add_location(button0, file$4, 105, 6, 1882);
-    			attr_dev(button1, "class", "svelte-1k0kz0p");
-    			add_location(button1, file$4, 106, 6, 1948);
-    			attr_dev(div1, "class", "button-container svelte-1k0kz0p");
-    			add_location(div1, file$4, 104, 4, 1845);
-    			attr_dev(div2, "class", "landing-page svelte-1k0kz0p");
-    			add_location(div2, file$4, 100, 2, 1719);
+    			attr_dev(img, "class", "logo svelte-1x55m7w");
+    			add_location(img, file$4, 103, 6, 1810);
+    			attr_dev(div0, "class", "container svelte-1x55m7w");
+    			add_location(div0, file$4, 102, 4, 1780);
+    			attr_dev(button0, "class", "svelte-1x55m7w");
+    			add_location(button0, file$4, 106, 6, 1912);
+    			attr_dev(button1, "class", "svelte-1x55m7w");
+    			add_location(button1, file$4, 107, 6, 1978);
+    			attr_dev(div1, "class", "button-container svelte-1x55m7w");
+    			add_location(div1, file$4, 105, 4, 1875);
+    			attr_dev(div2, "class", "landing-page svelte-1x55m7w");
+    			add_location(div2, file$4, 101, 2, 1749);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3163,7 +3163,7 @@ var app = (function () {
     	};
 
     	const goToInstagram = () => {
-    		window.open('https://www.instagram.com/monjay/', '_blank');
+    		window.open('https://www.instagram.com/monjay.cafe/', '_blank');
     	};
 
     	const writable_props = [];
