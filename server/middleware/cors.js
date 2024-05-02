@@ -4,6 +4,9 @@ const cors = require('cors');
 const allowedOrigins = [
   'http://localhost:8080',
   'http://localhost:5000',
+  'https://localhost:5000',
+  'http://localhost',
+  'https://localhost',
   'http://monjay.ir',
   'http://www.monjay.ir',
   'https://monjay.ir',

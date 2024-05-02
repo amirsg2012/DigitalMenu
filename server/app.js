@@ -8,6 +8,7 @@ const path = require('path');
 const https = require('https'); // Require the https module
 const fs = require('fs');
 const app = express();
+require('dotenv').config();
 
 // Connect to MongoDB
 connectDB();
@@ -49,8 +50,8 @@ app.use(require('./middleware/errorHandler'));
 
 // HTTPS Server Configuration
 const options = {
-  key: fs.readFileSync('/etc/letsencrypt/live/monjay.ir/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/monjay.ir/fullchain.pem')
+  key: fs.readFileSync(process.env.PRIVKEY),
+  cert: fs.readFileSync(process.env.FULLCHAIN),
 };
 
 const PORT = process.env.PORT || 5000; // Use port 443 for HTTPS

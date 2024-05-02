@@ -17,6 +17,13 @@
       imageUrl: imageUrl
     });
   }
+  // Function to check if it's breakfast time
+  function isBreakfastTime() {
+    const now = new Date();
+    const hours = now.getHours();
+    // Example: If breakfast time is between 7 AM and 10 AM
+    return (hours >= 18 && hours < 21 || hours >= 8 && hours < 11);
+  }
 
   async function fetchMenuItems() {
     try {
@@ -224,27 +231,25 @@ async function fetchCategories() {
 
   <div class="menu-grid">
     {#each menuItems as item}
-      {#if selectedCategory === 'All' || selectedCategory === item.category}
-        <div class="menu-item" transition:fly="{{y: -10, duration: 300}}">
-          <div class="image-viewer" on:click={() => handleClick(item.imageUrl)}>
-            <img src={item.imageUrl} alt="{item.name}">
-          </div>
-          <h2>{item.name}</h2>
-			  {#if item.description != undefined}
-          <p>{item.description}</p>
-			  {/if}
-          <p>{item.price}T</p>
-			  {#if item.available}
-          <button class="button_1" >موجود</button>
-		  	  {/if}
-			  {#if !(item.available)}
-		  <button class="button_2" >ناموجود</button>
-		  	  {/if}
-
-
-
+    {#if selectedCategory === 'All' || selectedCategory === item.category}
+      <div class="menu-item" transition:fly="{{y: -10, duration: 300}}">
+        <div class="image-viewer" on:click={() => handleClick(item.imageUrl)}>
+          <img src={item.imageUrl} alt="{item.name}">
         </div>
-      {/if}
-    {/each}
+        <h2>{item.name}</h2>
+        {#if item.description != undefined}
+          <p>{item.description}</p>
+        {/if}
+        <p>{item.price}T</p>
+        {#if item.category === 'صبحانه و میان وعده|BREAKFAST & BRUNCH' && isBreakfastTime()}
+        <p> صبحانه و میان وعده در ساعات ۸-۱۱ و ۱۸-۲۱ سرو میشد</p>
+        {:else if item.available}
+          <button class="button_1">موجود</button>
+        {:else if item.available === false}
+          <button class="button_2">ناموجود</button>  
+        {/if}
+      </div>
+    {/if}
+  {/each}
   </div>
 </div>
