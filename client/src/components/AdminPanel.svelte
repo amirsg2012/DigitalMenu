@@ -62,7 +62,7 @@
 
         async function fetchMenuItems() {
             try {
-                const response = await fetch('http://'+ MY_IP +':5000/api/menu');
+                const response = await fetch('https://'+ MY_IP +':5000/api/menu');
                 if (!response.ok) {
                     throw new Error('Failed to fetch menu items');
                 }
@@ -77,7 +77,7 @@
 
         async function fetchCategories() {
             try {
-                const response = await fetch('http://'+ MY_IP +':5000/api/categories');
+                const response = await fetch('https://'+ MY_IP +':5000/api/categories');
                 if (!response.ok) {
                     throw new Error('Failed to fetch categories');
                 }
@@ -95,7 +95,7 @@
             formData.append('image', imageFile);
 
             // Send a request to the server to add the new item
-            fetch('http://'+ MY_IP +':5000/api/menu/add', {
+            fetch('https://'+ MY_IP +':5000/api/menu/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -121,7 +121,7 @@
             formData.append('icon', categoryIconFile);
 
             // Send a request to the server to add the new category
-            fetch('http://'+ MY_IP +':5000/api/categories', {
+            fetch('https://'+ MY_IP +':5000/api/categories', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -147,7 +147,7 @@
             formData.append('data', JSON.stringify(selectedCategoryItem));
             formData.append('icon', categoryIconFile);
             // Send a request to the server to update the selected category
-            fetch(`http://${MY_IP}:5000/api/categories/${selectedCategoryItem._id}`, {
+            fetch(`https://${MY_IP}:5000/api/categories/${selectedCategoryItem._id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -172,7 +172,7 @@
         const formData = new FormData();
         formData.append('icon', categoryIconFile);
 
-        fetch('http://'+ MY_IP +':5000/api/categories/upload-icon', {
+        fetch('https://'+ MY_IP +':5000/api/categories/upload-icon', {
             method: 'POST',
             body: formData
         })
@@ -196,7 +196,7 @@
         imageFile = event.target.files[0];
         formData.append('image', file);
 
-        fetch('http://'+ MY_IP +':5000/api/menu/upload', {
+        fetch('https://'+ MY_IP +':5000/api/menu/upload', {
             method: 'POST',
             body: formData
         })
@@ -218,7 +218,7 @@
         function deleteSelectedCategory() {
             if (confirm("Are you sure you want to delete this category?")) {
                 // Send a request to the server to delete the selected category
-                fetch(`http://${MY_IP}:5000/api/categories/${selectedCategoryItem._id}`, {
+                fetch(`https://${MY_IP}:5000/api/categories/${selectedCategoryItem._id}`, {
                     method: 'DELETE'
                 })
                 .then(response => {
@@ -248,7 +248,7 @@
         }
         function deleteSelectedItem() {
             if (confirm("Are you sure you want to delete this item?")) {
-                fetch(`http://${MY_IP}:5000/api/menu/${selectedItem._id}`, {
+                fetch(`https://${MY_IP}:5000/api/menu/${selectedItem._id}`, {
                     method: 'DELETE'
                 })
                 .then(response => {
@@ -270,7 +270,7 @@
             formData.append('data', JSON.stringify(selectedItem));
             formData.append('image', imageFile);
 
-            fetch(`http://${MY_IP}:5000/api/menu/${selectedItem._id}`, {
+            fetch(`https://${MY_IP}:5000/api/menu/${selectedItem._id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -291,7 +291,7 @@
 // Function to update the order of categories in the database
 async function updateCategoryOrder(catID, newIndex) {
     try {
-        const response = await fetch(`http://${MY_IP}:5000/api/categories/${catID}/reorder`, {
+        const response = await fetch(`https://${MY_IP}:5000/api/categories/${catID}/reorder`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -312,7 +312,7 @@ async function updateCategoryOrder(catID, newIndex) {
 
 async function updateItemOrder(itemID, newIndex) {
     try {
-        const response = await fetch(`http://${MY_IP}:5000/api/menu/${itemID}/reorder`, {
+        const response = await fetch(`https://${MY_IP}:5000/api/menu/${itemID}/reorder`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

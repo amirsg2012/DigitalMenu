@@ -99,7 +99,6 @@ button:hover {
   </style>
   
   <div class="landing-page">
-    <p>کافه مانجای همه روزه از 8 تا 8 در خدمت شماست</p>
     <div class="container">
       <img src="/logologo.png" alt="Logo" class="logo">
     </div>

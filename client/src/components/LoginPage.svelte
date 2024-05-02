@@ -13,7 +13,7 @@
         event.preventDefault();
 
         try {
-            const response = await fetch('http://'+ MY_IP +':5000/api/admin/login', {
+            const response = await fetch('https://'+ MY_IP +':5000/api/admin/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify($formData)
