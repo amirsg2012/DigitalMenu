@@ -6,7 +6,6 @@ Digital Menu is a modern digital product catalog designed to provide a seamless 
 
 - [Features](#features)
 - [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -27,21 +26,6 @@ Digital Menu is a modern digital product catalog designed to provide a seamless 
 - **Database**: [MongoDB](https://www.mongodb.com/) or other compatible databases
 - **Version Control**: [Git](https://git-scm.com/)
 
-## Project Structure
-
-digital-menu/
-├── client/ # Svelte frontend application
-│ ├── public/ # Public assets
-│ ├── src/ # Svelte components and logic
-│ ├── ... # Other Svelte app files
-├── server/ # Node.js and Express.js backend
-│ ├── models/ # Database models
-│ ├── routes/ # API endpoints
-│ ├── controllers/ # Request handlers
-│ ├── ... # Other backend files
-├── package.json # Project metadata and dependencies
-└── README.md # Project documentation
-
 
 ## Installation
 
@@ -50,8 +34,8 @@ To get started with the Digital Menu, follow these steps:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/digital-menu.git
-    cd digital-menu
+    git clone https://github.com/amirsg2012/DigitalMenu.git
+    cd DigitalMenu
     ```
 
 2. **Install dependencies**:
